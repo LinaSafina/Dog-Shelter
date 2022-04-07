@@ -1,0 +1,6 @@
+@mixin text-style($font-family: $font-georgia, $font-size, $font-weight: 400, $line-height: auto, $letter-spacing: 0px){
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
