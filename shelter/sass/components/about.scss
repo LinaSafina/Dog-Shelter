@@ -16,21 +16,12 @@
       height: 380px;
       margin: 14px 175px 13px 120px;
       h3 {
-        @include text-style(
-          $font-family: $font-georgia,
-          $font-size: 35px,
-          $line-height: 130%,
-          $letter-spacing: 0.06em
-        );
+        @include h3();
         color: $color-dark-l;
         padding-right: 60px;
       }
       p {
-        @include text-style(
-          $font-family: $font-arial,
-          $font-size: 15px,
-          $line-height: 160%
-        );
+        @include paragraph-l();
         color: $color-dark-xl;
         margin-top: 25px;
       }

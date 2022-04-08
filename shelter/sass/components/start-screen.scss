@@ -11,20 +11,12 @@
       margin-top: 163px;
       margin-right: 42px;
       h2 {
-        @include text-style(
-          $font-family: $font-georgia,
-          $font-size: 44px,
-          $line-height: 130%
-        );
+        @include h2();
         color: $color-light-xl;
         padding-right: 150px;
       }
       p {
-        @include text-style(
-          $font-family: $font-arial,
-          $font-size: 15px,
-          $line-height: 160%
-        );
+        @include paragraph-l();
         color: $color-dark-s;
         margin: 42px 0;
       }

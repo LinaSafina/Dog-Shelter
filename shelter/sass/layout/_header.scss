@@ -8,21 +8,12 @@ header {
 header {
   .logo {
     .title {
-      @include text-style(
-        $font-family: $font-georgia,
-        $font-size: 32px,
-        $line-height: 110%,
-        $letter-spacing: 0.06em
-      );
+      @include logo_title();
       color: $color-primary;
       vertical-align: middle;
     }
     .subtitle {
-      @include text-style(
-        $font-family: $font-arial,
-        $font-size: 13px,
-        $letter-spacing: 0.1em
-      );
+      @include logo_subtitle();
       color: $color-light-xl;
       vertical-align: center;
       padding-top: 10px;

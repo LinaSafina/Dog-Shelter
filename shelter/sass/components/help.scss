@@ -1,0 +1,33 @@
+.help {
+  .help-content {
+    margin: 80px 40px 100px;
+    h3 {
+      @include h3();
+      text-align: center;
+      color: $color-dark-l;
+    }
+    ul {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      // display: grid;
+      // grid-template-columns: repeat(5, auto);
+      // grid-template-rows: 1fr;
+      // row-gap: 55px;
+      text-align: center;
+      li {
+        margin: 0 60px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+        h4 {
+          @include h4();
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+}

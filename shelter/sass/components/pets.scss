@@ -2,15 +2,10 @@
   font-family: $font-georgia;
   background-color: $color-light-l;
   div {
-    margin: 80px 40px 100px;
+    margin: 80px 40px 0;
     text-align: center;
     h3 {
-      @include text-style(
-        $font-family: $font-georgia,
-        $font-size: 35px,
-        $line-height: 130%,
-        $letter-spacing: 0.06em
-      );
+      @include h3();
       color: $color-dark-l;
       padding-top: 80px;
     }
