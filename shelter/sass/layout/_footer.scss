@@ -1,0 +1,33 @@
+footer {
+  background-image: url('../../assets/images/main/footer-background.png');
+  & > div {
+    padding: 40px 40px 0;
+    display: flex;
+    justify-content: space-between;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      h3 {
+        @include h3();
+        color: $color-light-xl;
+      }
+      div {
+        display: flex;
+        img {
+          width: 40px;
+          height: 32px;
+        }
+        h4 {
+          @include h4();
+          color: $color-primary;
+        }
+      }
+    }
+    & > img {
+      width: 300px;
+      height: 310px;
+    }
+  }
+}
