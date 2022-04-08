@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia1/Georgia.eot");
+  src: url("../../assets/fonts/Georgia1/Georgia.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia1/Georgia-Bold.eot");
+  src: url("../../assets/fonts/Georgia1/Georgia-Bold.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-Bold.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot");
+  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia1/Georgia-Italic.eot");
+  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-Italic.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial/arial_bolditalicmt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+.start-screen div {
+  background-image: url("../../assets/images/main/start-screen-background.jpg");
+  padding: 180px 40px 0 40px;
+  display: flex;
+}
+.start-screen div .content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 163px;
+  margin-right: 42px;
+}
+.start-screen div .content h2 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0px;
+  color: #FFF;
+  padding-right: 150px;
+}
+.start-screen div .content p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0px;
+  color: #CDCDCD;
+  margin: 42px 0;
+}
+.start-screen div .content button {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  width: 207px;
+  height: 52px;
+  color: #292929;
+  background-color: #F1CDB3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+.start-screen div img {
+  height: 100%;
+}
+
+.about div {
+  margin: 80px 40px 101px;
+  display: flex;
+}
+.about div img {
+  width: 300px;
+  height: 408px;
+  margin-left: 175px;
+}
+.about div div {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 380px;
+  margin: 14px 175px 13px 120px;
+}
+.about div div h3 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-right: 60px;
+}
+.about div div p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0px;
+  color: #4C4C4C;
+  margin-top: 25px;
+}
+
+.pets div {
+  margin: 80px 40px 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 60px 40px 0px 40px;
+}
+
+header .logo .title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  vertical-align: middle;
+}
+header .logo .subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: auto;
+  letter-spacing: 0.1em;
+  color: #FFF;
+  vertical-align: center;
+  padding-top: 10px;
+  padding-left: 4px;
+}
+header .nav-menu {
+  width: 443px;
+  display: flex;
+  align-items: center;
+}
+header .nav-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-menu ul li a {
+  color: #CDCDCD;
+}
+
+header {
+  position: absolute;
+}
+
+/*# sourceMappingURL=main.css.map */

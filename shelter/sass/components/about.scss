@@ -1,0 +1,39 @@
+.about {
+  div {
+    margin: 80px 40px 101px;
+    display: flex;
+    img {
+      width: 300px;
+      height: 408px;
+      margin-left: 175px;
+      // margin-bottom: 1px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      width: 430px;
+      height: 380px;
+      margin: 14px 175px 13px 120px;
+      h3 {
+        @include text-style(
+          $font-family: $font-georgia,
+          $font-size: 35px,
+          $line-height: 130%,
+          $letter-spacing: 0.06em
+        );
+        color: $color-dark-l;
+        padding-right: 60px;
+      }
+      p {
+        @include text-style(
+          $font-family: $font-arial,
+          $font-size: 15px,
+          $line-height: 160%
+        );
+        color: $color-dark-xl;
+        margin-top: 25px;
+      }
+    }
+  }
+}

@@ -1,8 +1,14 @@
-main {
-  .start-screen {
-    
-  }
-  .about {}
-  .pets {}
-  .help {}
+@import '../abstracts/fonts';
+@import '../abstracts/mixin';
+@import '../abstracts/variables';
+@import '../components/start-screen.scss';
+@import '../components/about.scss';
+@import '../components/pets.scss';
+@import '../components/help.scss';
+@import '../components/donation.scss';
+@import '../layout/footer';
+@import '../layout/header';
+
+header {
+  position: absolute;
 }

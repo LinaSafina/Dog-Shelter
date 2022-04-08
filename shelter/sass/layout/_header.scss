@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 60px 40px 0px 40px;
+}
+
+header {
+  .logo {
+    .title {
+      @include text-style(
+        $font-family: $font-georgia,
+        $font-size: 32px,
+        $line-height: 110%,
+        $letter-spacing: 0.06em
+      );
+      color: $color-primary;
+      vertical-align: middle;
+    }
+    .subtitle {
+      @include text-style(
+        $font-family: $font-arial,
+        $font-size: 13px,
+        $letter-spacing: 0.1em
+      );
+      color: $color-light-xl;
+      vertical-align: center;
+      padding-top: 10px;
+      padding-left: 4px;
+    }
+  }
+  .nav-menu {
+    width: 443px;
+    display: flex;
+    align-items: center;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          color: $color-dark-s;
+        }
+      }
+    }
+  }
+}
