@@ -1,6 +1,27 @@
-@mixin text-style($font-family, $font-size, $font-weight: 400, $line-height: auto, $letter-spacing: 0px){
+@mixin text-style(
+  $font-family,
+  $font-size,
+  $font-weight: 400,
+  $line-height: auto,
+  $letter-spacing: 0px
+) {
   font-size: $font-size;
   font-weight: $font-weight;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
+}
+
+@mixin button() {
+  font-family: $font-georgia;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-3xl;
+  border-radius: 100px;
+  padding: 15px 45px;
+}
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
 }
