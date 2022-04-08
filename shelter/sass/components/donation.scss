@@ -1,0 +1,49 @@
+.donations {
+  background-color: $color-light-l;
+  .donations-content {
+    padding: 80px 0 100px;
+    display: flex;
+    justify-content: center;
+    & > img {
+      width: 505px;
+      height: 261px;
+    }
+    & > div {
+      width: 380px;
+      height: 282px;
+      padding-left: 30px;
+      h5 {
+        @include h5();
+        color: $color-dark-l;
+        padding: 20px 0;
+      }
+      h3 {
+        @include h3();
+        color: $color-dark-l;
+      }
+      div {
+        background-color: $color-primary;
+        border-radius: 9px;
+        display: flex;
+        padding: 10px 15px;
+        img {
+          width: 30px;
+          height: 23px;
+        }
+        h4 {
+          @include h4();
+          color: $color-dark-l;
+        }
+      }
+      p {
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-dark-m;
+        margin-top: 20px;
+      }
+    }
+  }
+}
