@@ -1,0 +1,18 @@
+main {
+  padding: 0 $padding;
+  & > div {
+    margin: 80px 0 100px;
+    text-align: center;
+    h3 {
+      @include h3();
+      color: $color-dark-l;
+    }
+    .pet-container {
+      margin: 45px 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 30px 40px;
+    }
+  }
+}

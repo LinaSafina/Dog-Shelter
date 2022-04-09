@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia1/Georgia.eot");
+  src: url("../../assets/fonts/Georgia1/Georgia.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia1/Georgia-Bold.eot");
+  src: url("../../assets/fonts/Georgia1/Georgia-Bold.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-Bold.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot");
+  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/Georgia1/Georgia-Italic.eot");
+  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-Italic.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/Arial/arial_bolditalicmt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  margin: 0 45px;
+}
+.pet-card:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.pet-card img {
+  width: 270px;
+  height: 270px;
+  border-radius: 9px 9px 0px 0px;
+}
+.pet-card p {
+  margin: 30px 0;
+  font-size: 20px;
+  line-height: 22.72px;
+  letter-spacing: 0.06em;
+}
+.pet-card button {
+  font-family: Georgia, Verdana, serif;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  border-radius: 100px;
+  padding: 15px 45px;
+  margin: 0 41.5px 30px;
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+}
+.pet-card:hover > button {
+  background-color: #fddcc4;
+  border: none;
+}
+
+main {
+  padding: 0 40px 0;
+}
+main > div {
+  margin: 80px 0 100px;
+  text-align: center;
+}
+main > div h3 {
+  font-family: Georgia, Verdana, serif;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  font-style: normal;
+  font-weight: 400;
+  color: #545454;
+}
+main > div .pet-container {
+  margin: 45px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px 40px;
+}
+
+footer {
+  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(at left, #513d2f, #1a1a1c);
+}
+footer > div {
+  padding: 40px 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+footer > div > div h3 {
+  font-family: Georgia, Verdana, serif;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+}
+footer > div > div div a {
+  display: flex;
+}
+footer > div > div div a img {
+  width: 40px;
+  height: 32px;
+}
+footer > div > div div a h4 {
+  font-family: Georgia, Verdana, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3;
+  padding-left: 20px;
+  align-self: center;
+}
+footer > div > img {
+  width: 300px;
+  height: 310px;
+}
+
+header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  padding: 60px 40px 0px;
+}
+header .logo .title {
+  font-family: Georgia, Verdana, serif;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  font-style: normal;
+  font-weight: 400;
+  color: #f1cdb3;
+  vertical-align: middle;
+}
+header .logo .subtitle {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  vertical-align: center;
+  padding-top: 10px;
+  padding-left: 4px;
+}
+header .nav-menu {
+  width: 443px;
+  display: flex;
+  align-items: center;
+}
+header .nav-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-menu ul li a {
+  color: #cdcdcd;
+}
+header .nav-menu ul li a:hover {
+  color: #fafafa;
+  cursor: pointer;
+}
+header .nav-menu ul li .current-link {
+  color: #fafafa;
+  position: relative;
+}
+header .nav-menu ul li .current-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #f1cdb3;
+}
+
+.wrapper {
+  position: relative;
+  width: 1280px;
+  margin: auto;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+header {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: sticky;
+}
+header .logo .title,
+header .logo .subtitle {
+  color: #545454;
+}
+header .nav-menu ul li a {
+  color: #545454;
+}
+header .nav-menu ul li a:hover {
+  color: #292929;
+}
+header .nav-menu ul li .current-link {
+  color: #545454;
+}
+
+.pet-card {
+  margin: 0;
+}
+
+/*# sourceMappingURL=pets.css.map */

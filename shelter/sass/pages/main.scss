@@ -3,6 +3,7 @@
 @import '../abstracts/variables';
 @import '../components/start-screen.scss';
 @import '../components/about.scss';
+@import '../components/pet-card.scss';
 @import '../components/pets.scss';
 @import '../components/help.scss';
 @import '../components/donation.scss';
@@ -10,3 +11,6 @@
 @import '../layout/header';
 @import '../layout/wrapper';
 
+body {
+  background-color: #5b483a;
+}

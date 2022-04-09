@@ -1,12 +1,11 @@
 header {
   display: flex;
   position: absolute;
+  top: 0;
+  left: 0;
   justify-content: space-between;
   width: 100%;
   padding: 60px $padding 0px;
-}
-
-header {
   .logo {
     .title {
       @include logo_title();

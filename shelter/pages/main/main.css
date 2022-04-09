@@ -33,7 +33,7 @@
   font-style: italic;
 }
 .start-screen {
-  background: url("../../assets/images/main/noise_transparent@2x.png"), radial-gradient(at top left, #5b483a, #262425);
+  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(at top left, #5b483a, #262425);
 }
 .start-screen div {
   padding: 180px 40px 0;
@@ -53,7 +53,7 @@
   line-height: 130%;
   font-style: normal;
   font-weight: 400;
-  color: #FFF;
+  color: #fff;
   padding-right: 150px;
 }
 .start-screen div .content p {
@@ -62,7 +62,7 @@
   line-height: 160%;
   font-style: normal;
   font-weight: 400;
-  color: #CDCDCD;
+  color: #cdcdcd;
   margin: 42px 0;
 }
 .start-screen div .content a[type=button] {
@@ -74,12 +74,12 @@
   color: #292929;
   border-radius: 100px;
   padding: 15px 45px;
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   align-self: flex-start;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .start-screen div .content a[type=button]:hover {
-  background-color: #FDDCC4;
+  background-color: #fddcc4;
   cursor: pointer;
 }
 .start-screen div img {
@@ -119,13 +119,51 @@
   line-height: 160%;
   font-style: normal;
   font-weight: 400;
-  color: #4C4C4C;
+  color: #4c4c4c;
   margin-top: 25px;
+}
+
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  margin: 0 45px;
+}
+.pet-card:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.pet-card img {
+  width: 270px;
+  height: 270px;
+  border-radius: 9px 9px 0px 0px;
+}
+.pet-card p {
+  margin: 30px 0;
+  font-size: 20px;
+  line-height: 22.72px;
+  letter-spacing: 0.06em;
+}
+.pet-card button {
+  font-family: Georgia, Verdana, serif;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  border-radius: 100px;
+  padding: 15px 45px;
+  margin: 0 41.5px 30px;
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+}
+.pet-card:hover > button {
+  background-color: #fddcc4;
+  border: none;
 }
 
 .pets {
   font-family: Georgia, Verdana, serif;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 .pets > div {
   padding: 80px 40px 0;
@@ -140,12 +178,12 @@
   font-weight: 400;
   color: #545454;
 }
-.pets > div div {
+.pets > div > div {
   margin: 60px 0;
   display: flex;
 }
-.pets > div div .button-arrow {
-  border: 2px solid #F1CDB3;
+.pets > div > div .button-arrow {
+  border: 2px solid #f1cdb3;
   border-radius: 100px;
   padding: 23px 19px;
   width: 52px;
@@ -156,52 +194,15 @@
   justify-content: center;
   align-items: center;
 }
-.pets > div div .button-arrow:hover {
+.pets > div > div .button-arrow:hover {
   border: none;
-  background-color: #FDDCC4;
+  background-color: #fddcc4;
 }
-.pets > div div .right {
+.pets > div > div .right {
   margin-right: 8px;
 }
-.pets > div div .left {
+.pets > div > div .left {
   margin-left: 8px;
-}
-.pets > div div div {
-  display: flex;
-  flex-direction: column;
-  background-color: #FAFAFA;
-  margin: 0 45px;
-}
-.pets > div div div:hover {
-  background-color: #FFF;
-  cursor: pointer;
-}
-.pets > div div div img {
-  width: 270px;
-  height: 270px;
-  border-radius: 9px 9px 0px 0px;
-}
-.pets > div div div p {
-  margin: 30px 0;
-  font-size: 20px;
-  line-height: 22.72px;
-  letter-spacing: 0.06em;
-}
-.pets > div div div button {
-  font-family: Georgia, Verdana, serif;
-  font-size: 17px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: #292929;
-  border-radius: 100px;
-  padding: 15px 45px;
-  margin-bottom: 30px;
-  border: 2px solid #F1CDB3;
-  background-color: transparent;
-}
-.pets > div div div:hover > button {
-  background-color: #FDDCC4;
-  border: none;
 }
 .pets > div a[type=button] {
   display: inline-block;
@@ -212,11 +213,11 @@
   color: #292929;
   border-radius: 100px;
   padding: 15px 45px;
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   margin-bottom: 100px;
 }
 .pets > div a[type=button]:hover {
-  background-color: #FDDCC4;
+  background-color: #fddcc4;
   cursor: pointer;
 }
 
@@ -261,7 +262,7 @@
 }
 
 .donations {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 .donations .donations-content {
   padding: 80px 0 100px;
@@ -297,13 +298,13 @@
   color: #545454;
 }
 .donations .donations-content > div div {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   border-radius: 9px;
   display: flex;
   padding: 10px 15px;
 }
 .donations .donations-content > div div:hover {
-  background-color: #FDDCC4;
+  background-color: #fddcc4;
   cursor: pointer;
 }
 .donations .donations-content > div div img {
@@ -329,12 +330,12 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  color: #B2B2B2;
+  color: #b2b2b2;
   margin-top: 20px;
 }
 
 footer {
-  background: url("../../assets/images/main/noise_transparent@2x.png"), radial-gradient(at left, #513d2f, #1a1a1c);
+  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(at left, #513d2f, #1a1a1c);
 }
 footer > div {
   padding: 40px 40px 0;
@@ -354,7 +355,7 @@ footer > div > div h3 {
   letter-spacing: 0.06em;
   font-style: normal;
   font-weight: 400;
-  color: #FFF;
+  color: #fff;
 }
 footer > div > div div a {
   display: flex;
@@ -370,7 +371,7 @@ footer > div > div div a h4 {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #F1CDB3;
+  color: #f1cdb3;
   padding-left: 20px;
   align-self: center;
 }
@@ -382,11 +383,12 @@ footer > div > img {
 header {
   display: flex;
   position: absolute;
+  top: 0;
+  left: 0;
   justify-content: space-between;
   width: 100%;
   padding: 60px 40px 0px;
 }
-
 header .logo .title {
   font-family: Georgia, Verdana, serif;
   font-size: 32px;
@@ -394,7 +396,7 @@ header .logo .title {
   letter-spacing: 0.06em;
   font-style: normal;
   font-weight: 400;
-  color: #F1CDB3;
+  color: #f1cdb3;
   vertical-align: middle;
 }
 header .logo .subtitle {
@@ -404,7 +406,7 @@ header .logo .subtitle {
   letter-spacing: 0.1em;
   font-style: normal;
   font-weight: 400;
-  color: #FFF;
+  color: #fff;
   vertical-align: center;
   padding-top: 10px;
   padding-left: 4px;
@@ -420,14 +422,14 @@ header .nav-menu ul {
   justify-content: space-between;
 }
 header .nav-menu ul li a {
-  color: #CDCDCD;
+  color: #cdcdcd;
 }
 header .nav-menu ul li a:hover {
-  color: #FAFAFA;
+  color: #fafafa;
   cursor: pointer;
 }
 header .nav-menu ul li .current-link {
-  color: #FAFAFA;
+  color: #fafafa;
   position: relative;
 }
 header .nav-menu ul li .current-link:after {
@@ -437,17 +439,17 @@ header .nav-menu ul li .current-link:after {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #F1CDB3;
-}
-
-body {
-  background-color: #5b483a;
+  background-color: #f1cdb3;
 }
 
 .wrapper {
   position: relative;
   width: 1280px;
   margin: auto;
+}
+
+body {
+  background-color: #5b483a;
 }
 
 /*# sourceMappingURL=main.css.map */
