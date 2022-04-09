@@ -1,24 +1,22 @@
 .about {
-  div {
-    margin: 80px 40px 101px;
+  background-color: white;
+  & > div {
+    padding: 80px $padding 101px;
     display: flex;
+    justify-content: center;
     img {
       width: 300px;
       height: 408px;
-      margin-left: 175px;
       // margin-bottom: 1px;
     }
-
     div {
       display: flex;
       flex-direction: column;
       width: 430px;
-      height: 380px;
-      margin: 14px 175px 13px 120px;
+      margin-left: 120px;
       h3 {
         @include h3();
         color: $color-dark-l;
-        padding-right: 60px;
       }
       p {
         @include paragraph-l();

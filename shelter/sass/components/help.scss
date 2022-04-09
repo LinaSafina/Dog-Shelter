@@ -1,6 +1,7 @@
 .help {
+  background-color: white;
   .help-content {
-    margin: 80px 40px 45px;
+    padding: 80px $padding 45px;
     h3 {
       @include h3();
       text-align: center;

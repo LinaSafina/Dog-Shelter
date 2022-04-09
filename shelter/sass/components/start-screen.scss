@@ -2,7 +2,7 @@
   background: url('../../assets/images/main/noise_transparent@2x.png'),
     radial-gradient(at top left, #5b483a, #262425);
   div {
-    padding: 180px 40px 0 40px;
+    padding: 180px $padding 0;
     display: flex;
     .content {
       display: flex;

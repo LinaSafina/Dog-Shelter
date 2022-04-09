@@ -1,8 +1,9 @@
 header {
   display: flex;
+  position: absolute;
   justify-content: space-between;
   width: 100%;
-  padding: 60px 40px 0px 40px;
+  padding: 60px $padding 0px;
 }
 
 header {

@@ -1,13 +1,12 @@
 .pets {
   font-family: $font-georgia;
   background-color: $color-light-l;
-  div {
-    margin: 80px 40px 0;
+  & > div {
+    padding: 80px $padding 0;
     text-align: center;
     h3 {
       @include h3();
       color: $color-dark-l;
-      padding-top: 80px;
     }
     div {
       margin: 60px 0;

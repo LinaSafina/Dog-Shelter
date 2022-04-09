@@ -2,7 +2,7 @@ footer {
   background: url('../../assets/images/main/noise_transparent@2x.png'),
     radial-gradient(at left, #513d2f, #1a1a1c);
   & > div {
-    padding: 40px 40px 0;
+    padding: 40px $padding 0;
     display: flex;
     justify-content: space-between;
     & > div {
