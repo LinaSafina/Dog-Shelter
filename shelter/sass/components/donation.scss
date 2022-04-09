@@ -26,13 +26,21 @@
         border-radius: 9px;
         display: flex;
         padding: 10px 15px;
+        &:hover {
+          background-color: $color-primary-light;
+          cursor: pointer;
+        }
         img {
           width: 30px;
           height: 23px;
         }
-        h4 {
+        h4 a {
           @include h4();
           color: $color-dark-l;
+          padding-left: 15px;
+          a {
+            color: inherit;
+          }
         }
       }
       p {

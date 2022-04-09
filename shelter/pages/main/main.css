@@ -32,14 +32,17 @@
   font-weight: bold;
   font-style: italic;
 }
+.start-screen {
+  background: url("../../assets/images/main/noise_transparent@2x.png"), radial-gradient(at top left, #5b483a, #262425);
+}
 .start-screen div {
-  background-image: url("../../assets/images/main/start-screen-background.jpg");
   padding: 180px 40px 0 40px;
   display: flex;
 }
 .start-screen div .content {
   display: flex;
   flex-direction: column;
+  background-color: transparent;
   padding: 0;
   margin-top: 163px;
   margin-right: 42px;
@@ -62,7 +65,8 @@
   color: #CDCDCD;
   margin: 42px 0;
 }
-.start-screen div .content button {
+.start-screen div .content a[type=button] {
+  display: inline-block;
   font-family: Georgia, Verdana, serif;
   font-size: 17px;
   line-height: 130%;
@@ -73,6 +77,10 @@
   background-color: #F1CDB3;
   align-self: flex-start;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.start-screen div .content a[type=button]:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
 }
 .start-screen div img {
   height: 100%;
@@ -148,6 +156,10 @@
   justify-content: center;
   align-items: center;
 }
+.pets div div .button-arrow:hover {
+  border: none;
+  background-color: #FDDCC4;
+}
 .pets div div .right {
   margin-right: 8px;
 }
@@ -159,6 +171,10 @@
   flex-direction: column;
   background-color: #FAFAFA;
   margin: 0 45px;
+}
+.pets div div div:hover {
+  background-color: #FFF;
+  cursor: pointer;
 }
 .pets div div div img {
   width: 270px;
@@ -179,10 +195,16 @@
   color: #292929;
   border-radius: 100px;
   padding: 15px 45px;
+  margin-bottom: 30px;
   border: 2px solid #F1CDB3;
   background-color: transparent;
 }
-.pets div .button-primary {
+.pets div div div:hover > button {
+  background-color: #FDDCC4;
+  border: none;
+}
+.pets div a[type=button] {
+  display: inline-block;
   font-family: Georgia, Verdana, serif;
   font-size: 17px;
   line-height: 130%;
@@ -192,6 +214,10 @@
   padding: 15px 45px;
   background-color: #F1CDB3;
   margin-bottom: 100px;
+}
+.pets div a[type=button]:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
 }
 
 .help .help-content {
@@ -273,11 +299,15 @@
   display: flex;
   padding: 10px 15px;
 }
+.donations .donations-content > div div:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+}
 .donations .donations-content > div div img {
   width: 30px;
   height: 23px;
 }
-.donations .donations-content > div div h4 {
+.donations .donations-content > div div h4 a {
   font-family: Georgia, Verdana, serif;
   font-style: normal;
   font-weight: 400;
@@ -285,6 +315,10 @@
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
+  padding-left: 15px;
+}
+.donations .donations-content > div div h4 a a {
+  color: inherit;
 }
 .donations .donations-content > div p {
   font-family: "Arial";
@@ -297,7 +331,7 @@
 }
 
 footer {
-  background-image: url("../../assets/images/main/footer-background.png");
+  background: url("../../assets/images/main/noise_transparent@2x.png"), radial-gradient(at left, #513d2f, #1a1a1c);
 }
 footer > div {
   padding: 40px 40px 0;
@@ -319,14 +353,14 @@ footer > div > div h3 {
   font-weight: 400;
   color: #FFF;
 }
-footer > div > div div {
+footer > div > div div a {
   display: flex;
 }
-footer > div > div div img {
+footer > div > div div a img {
   width: 40px;
   height: 32px;
 }
-footer > div > div div h4 {
+footer > div > div div a h4 {
   font-family: Georgia, Verdana, serif;
   font-style: normal;
   font-weight: 400;
@@ -334,6 +368,8 @@ footer > div > div div h4 {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  padding-left: 20px;
+  align-self: center;
 }
 footer > div > img {
   width: 300px;

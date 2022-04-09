@@ -1,12 +1,13 @@
 .start-screen {
+  background: url('../../assets/images/main/noise_transparent@2x.png'),
+    radial-gradient(at top left, #5b483a, #262425);
   div {
-    background-image: url('../../assets/images/main/start-screen-background.jpg');
     padding: 180px 40px 0 40px;
     display: flex;
     .content {
       display: flex;
       flex-direction: column;
-      // justify-content: center;
+      background-color: transparent;
       padding: 0;
       margin-top: 163px;
       margin-right: 42px;
@@ -20,11 +21,16 @@
         color: $color-dark-s;
         margin: 42px 0;
       }
-      button {
+      a[type='button'] {
+        display: inline-block;
         @include button();
         background-color: $color-primary;
         align-self: flex-start;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+          background-color: $color-primary-light;
+          cursor: pointer;
+        }
       }
     }
     img {

@@ -11,15 +11,17 @@
   <body>
     <header>
       <div class="logo">
-        <h1 class="title">Cozy House</h1>
-        <p class="subtitle">Shelter for pets in Boston</p>
+        <a href="./index.html">
+          <h1 class="title">Cozy House</h1>
+          <p class="subtitle">Shelter for pets in Boston</p>
+        </a>
       </div>
       <nav class="nav-menu">
         <ul>
-          <li><a href="">About the shelter</a></li>
-          <li><a href="">Our pets</a></li>
-          <li><a href="">Help the shelter</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a href="./index.html">About the shelter</a></li>
+          <li><a href="../pets/index.html">Our pets</a></li>
+          <li><a href="#help">Help the shelter</a></li>
+          <li><a href="#footer">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -33,7 +35,7 @@
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <button>Make a friend</button>
+            <a href="#our-friends" type="button">Make a friend</a>
           </div>
           <img
             alt="Puppy"
@@ -66,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="pets">
+      <div class="pets" id="our-friends">
         <div>
           <h3>Our friends who <br />are looking for a house</h3>
           <div>
@@ -94,10 +96,10 @@
             </div>
             <button class="button-arrow left">→</button>
           </div>
-          <button class="button-primary">Go to know the rest</button>
+          <a href="../pets/index.html" type="button">Get to know the rest</a>
         </div>
       </div>
-      <div class="help">
+      <div class="help" id="help">
         <div class="help-content">
           <h3>
             How you can help <br />
@@ -185,7 +187,7 @@
                 alt="credit
                 card icon"
               />
-              <h4>8380 2880 8028 8791 7435</h4>
+              <h4><a>8380 2880 8028 8791 7435</a></h4>
             </div>
             <p>
               Legal information and lorem ipsum dolor sit amet, consectetur
@@ -197,7 +199,7 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer id="footer">
       <div>
         <div class="contacts">
           <h3>
@@ -205,18 +207,22 @@
             and suggestions
           </h3>
           <div class="mail">
-            <img
-              src="../../assets/icons/main/icon-email.svg"
-              alt="email icon"
-            />
-            <h4>email@shelter.com</h4>
+            <a href="mailto:">
+              <img
+                src="../../assets/icons/main/icon-email.svg"
+                alt="email icon"
+              />
+              <h4>email@shelter.com</h4>
+            </a>
           </div>
           <div class="phone">
-            <img
-              src="../../assets/icons/main/icon-phone.svg"
-              alt="phone icon"
-            />
-            <h4>+13 674 567 75 54</h4>
+            <a href="tel:">
+              <img
+                src="../../assets/icons/main/icon-phone.svg"
+                alt="phone icon"
+              />
+              <h4>+13 674 567 75 54</h4>
+            </a>
           </div>
         </div>
         <div class="locations">
@@ -225,21 +231,31 @@
             for your visit
           </h3>
           <div class="boston">
-            <img
-              src="../../assets/icons/main/icon-marker.svg"
-              alt="location marker icon"
-            />
-            <h4>
-              1 Central Street, Boston<br />
-              (entrance from the store)
-            </h4>
+            <a
+              href="https://www.google.ru/maps/place/1+Central+St,+Framingham,+MA+01701,+%D0%A1%D0%A8%D0%90/@42.3253626,-71.4023993,17z/data=!3m1!4b1!4m9!1m2!2m1!1s1+Central+Street,+Boston+(entrance+from+the+store)!3m5!1s0x89e388b0b33023dd:0x590b8cbbc78a6635!8m2!3d42.3253626!4d-71.4002106!15sCjIxIENlbnRyYWwgU3RyZWV0LCBCb3N0b24gKGVudHJhbmNlIGZyb20gdGhlIHN0b3JlKZIBEGdlb2NvZGVkX2FkZHJlc3M"
+              target="_blank"
+            >
+              <img
+                src="../../assets/icons/main/icon-marker.svg"
+                alt="location marker icon"
+              />
+              <h4>
+                1 Central Street, Boston<br />
+                (entrance from the store)
+              </h4>
+            </a>
           </div>
           <div class="london">
-            <img
-              src="../../assets/icons/main/icon-marker.svg"
-              alt="location marker icon"
-            />
-            <h4>18 South Park, London</h4>
+            <a
+              href="https://www.google.ru/maps/place/%D0%9F%D0%B0%D1%80%D0%BA+%D0%AE%D0%B3/@51.4612205,-0.2479028,11z/data=!4m9!1m2!2m1!1s18+South+Park,+London!3m5!1s0x48760f79376fa0e3:0x202ac3af5c1ea4ec!8m2!3d51.4691953!4d-0.1941945!15sChUxOCBTb3V0aCBQYXJrLCBMb25kb26SAQRwYXJr"
+              target="_blank"
+            >
+              <img
+                src="../../assets/icons/main/icon-marker.svg"
+                alt="location marker icon"
+              />
+              <h4>18 South Park, London</h4>
+            </a>
           </div>
         </div>
         <img src="../../assets/images/main/footer-puppy.png" alt="a puppy" />

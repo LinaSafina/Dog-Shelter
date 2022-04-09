@@ -1,5 +1,6 @@
 footer {
-  background-image: url('../../assets/images/main/footer-background.png');
+  background: url('../../assets/images/main/noise_transparent@2x.png'),
+    radial-gradient(at left, #513d2f, #1a1a1c);
   & > div {
     padding: 40px 40px 0;
     display: flex;
@@ -14,14 +15,18 @@ footer {
         color: $color-light-xl;
       }
       div {
-        display: flex;
-        img {
-          width: 40px;
-          height: 32px;
-        }
-        h4 {
-          @include h4();
-          color: $color-primary;
+        a {
+          display: flex;
+          img {
+            width: 40px;
+            height: 32px;
+          }
+          h4 {
+            @include h4();
+            color: $color-primary;
+            padding-left: 20px;
+            align-self: center;
+          }
         }
       }
     }

@@ -24,6 +24,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover {
+          border: none;
+          background-color: $color-primary-light;
+        }
       }
       .right {
         margin-right: 8px;
@@ -36,6 +40,10 @@
         flex-direction: column;
         background-color: $color-light-s;
         margin: 0 45px;
+        &:hover {
+          background-color: $color-light-xl;
+          cursor: pointer;
+        }
         img {
           width: 270px;
           height: 270px;
@@ -49,15 +57,25 @@
         }
         button {
           @include button();
+          margin-bottom: 30px;
           border: 2px solid $color-primary;
           background-color: transparent;
         }
+        &:hover > button {
+          background-color: $color-primary-light;
+          border: none;
+        }
       }
     }
-    .button-primary {
+    a[type='button'] {
+      display: inline-block;
       @include button();
       background-color: $color-primary;
       margin-bottom: 100px;
+      &:hover {
+        background-color: $color-primary-light;
+        cursor: pointer;
+      }
     }
   }
 }
