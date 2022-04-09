@@ -12,20 +12,10 @@
       margin: 60px 0;
       display: flex;
       .button-arrow {
-        border: 2px solid $color-primary;
-        border-radius: 100px;
-        // transform: rotate(-180deg);
-        padding: 23px 19px;
-        width: 52px;
-        height: 52px;
+        @include button-arrow();
         align-self: center;
-        color: $color-dark-3xl;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         &:hover {
-          border: none;
-          background-color: $color-primary-light;
+          @include light-button-hover();
         }
       }
       .right {
@@ -41,8 +31,7 @@
       background-color: $color-primary;
       margin-bottom: 100px;
       &:hover {
-        background-color: $color-primary-light;
-        cursor: pointer;
+        @include dark-button-hover;
       }
     }
   }

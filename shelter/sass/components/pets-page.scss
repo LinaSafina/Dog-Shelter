@@ -14,5 +14,26 @@ main {
       grid-template-rows: repeat(2, 1fr);
       gap: 30px 40px;
     }
+    .pagination {
+      @include flex-row-center();
+      .button-pagination {
+        @include button-arrow;
+        margin: 0 10px;
+        @include h4();
+        background-color: inherit;
+      }
+      .page {
+        background-color: $color-primary;
+      }
+      .disabled {
+        border-color: $color-dark-s;
+        color: $color-dark-s;
+      }
+      .active {
+        &:hover {
+          @include light-button-hover();
+        }
+      }
+    }
   }
 }

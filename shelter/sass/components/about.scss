@@ -2,16 +2,14 @@
   background-color: white;
   & > div {
     padding: 80px $padding 101px;
-    display: flex;
-    justify-content: center;
+    @include flex-row-center();
     img {
       width: 300px;
       height: 408px;
       // margin-bottom: 1px;
     }
     div {
-      display: flex;
-      flex-direction: column;
+      @include flex-column();
       width: 430px;
       margin-left: 120px;
       h3 {

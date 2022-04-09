@@ -66,12 +66,13 @@
   background-color: transparent;
 }
 .pet-card:hover > button {
+  border-color: #fddcc4;
   background-color: #fddcc4;
-  border: none;
+  cursor: pointer;
 }
 
 main {
-  padding: 0 40px 0;
+  padding: 0 40px;
 }
 main > div {
   margin: 80px 0 100px;
@@ -92,6 +93,41 @@ main > div .pet-container {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px 40px;
+}
+main > div .pagination {
+  display: flex;
+  justify-content: center;
+}
+main > div .pagination .button-pagination {
+  border-radius: 100px;
+  padding: 23px 19px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #292929;
+  border: 2px solid #f1cdb3;
+  margin: 0 10px;
+  font-family: Georgia, Verdana, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  background-color: inherit;
+}
+main > div .pagination .page {
+  background-color: #f1cdb3;
+}
+main > div .pagination .disabled {
+  border-color: #cdcdcd;
+  color: #cdcdcd;
+}
+main > div .pagination .active:hover {
+  border-color: #fddcc4;
+  background-color: #fddcc4;
+  cursor: pointer;
 }
 
 footer {

@@ -1,6 +1,5 @@
 .pet-card {
-  display: flex;
-  flex-direction: column;
+  @include flex-column();
   background-color: $color-light-s;
   margin: 0 45px;
   &:hover {
@@ -25,7 +24,6 @@
     background-color: transparent;
   }
   &:hover > button {
-    background-color: $color-primary-light;
-    border: none;
+    @include light-button-hover();
   }
 }

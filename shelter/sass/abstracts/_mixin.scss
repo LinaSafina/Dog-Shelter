@@ -22,9 +22,37 @@
   padding: 15px 45px;
 }
 
+@mixin button-arrow() {
+  border-radius: 100px;
+  padding: 23px 19px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-dark-3xl;
+  border: 2px solid $color-primary;
+}
+
+@mixin light-button-hover() {
+  border-color: $color-primary-light;
+  background-color: $color-primary-light;
+  cursor: pointer;
+}
+
+@mixin dark-button-hover() {
+  background-color: $color-primary-light;
+  cursor: pointer;
+}
+
 @mixin flex-column() {
   display: flex;
   flex-direction: column;
+}
+
+@mixin flex-row-center() {
+  display: flex;
+  justify-content: center;
 }
 
 @mixin h2() {

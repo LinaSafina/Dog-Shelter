@@ -157,8 +157,9 @@
   background-color: transparent;
 }
 .pet-card:hover > button {
+  border-color: #fddcc4;
   background-color: #fddcc4;
-  border: none;
+  cursor: pointer;
 }
 
 .pets {
@@ -183,20 +184,21 @@
   display: flex;
 }
 .pets > div > div .button-arrow {
-  border: 2px solid #f1cdb3;
   border-radius: 100px;
   padding: 23px 19px;
   width: 52px;
   height: 52px;
-  align-self: center;
-  color: #292929;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #292929;
+  border: 2px solid #f1cdb3;
+  align-self: center;
 }
 .pets > div > div .button-arrow:hover {
-  border: none;
+  border-color: #fddcc4;
   background-color: #fddcc4;
+  cursor: pointer;
 }
 .pets > div > div .right {
   margin-right: 8px;
