@@ -13,15 +13,14 @@
   }
   p {
     margin: 30px 0;
-    font-size: 20px;
-    line-height: 22.72px;
-    letter-spacing: 0.06em;
   }
   button {
     @include button();
     margin: 0 41.5px 30px;
     border: 2px solid $color-primary;
     background-color: transparent;
+    white-space: nowrap;
+    padding: 15px 43px;
   }
   &:hover > button {
     @include light-button-hover();

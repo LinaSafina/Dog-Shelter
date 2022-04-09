@@ -71,6 +71,8 @@
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
+  font-style: normal;
+  font-weight: 400;
   color: #292929;
   border-radius: 100px;
   padding: 15px 45px;
@@ -140,21 +142,22 @@
 }
 .pet-card p {
   margin: 30px 0;
-  font-size: 20px;
-  line-height: 22.72px;
-  letter-spacing: 0.06em;
 }
 .pet-card button {
   font-family: Georgia, Verdana, serif;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
+  font-style: normal;
+  font-weight: 400;
   color: #292929;
   border-radius: 100px;
   padding: 15px 45px;
   margin: 0 41.5px 30px;
   border: 2px solid #f1cdb3;
   background-color: transparent;
+  white-space: nowrap;
+  padding: 15px 43px;
 }
 .pet-card:hover > button {
   border-color: #fddcc4;
@@ -212,6 +215,8 @@
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
+  font-style: normal;
+  font-weight: 400;
   color: #292929;
   border-radius: 100px;
   padding: 15px 45px;

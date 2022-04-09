@@ -49,8 +49,12 @@
 }
 .pet-card p {
   margin: 30px 0;
-  font-size: 20px;
-  line-height: 22.72px;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
   letter-spacing: 0.06em;
 }
 .pet-card button {
