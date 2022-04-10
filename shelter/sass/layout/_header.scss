@@ -30,6 +30,7 @@ header {
       justify-content: space-between;
       li {
         a {
+          @include paragraph-l();
           color: $color-dark-s;
           &:hover {
             color: $color-light-s;
@@ -45,7 +46,7 @@ header {
             position: absolute;
             left: 0;
             width: 100%;
-            height: 3px;
+            height: 4px;
             background-color: $color-primary;
           }
         }

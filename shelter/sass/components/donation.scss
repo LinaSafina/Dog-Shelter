@@ -3,14 +3,15 @@
   .donations-content {
     padding: 80px 0 100px;
     @include flex-row-center();
+    align-items: center;
     & > img {
       width: 505px;
       height: 261px;
     }
     & > div {
       width: 380px;
-      height: 282px;
-      padding-left: 30px;
+      // height: 282px;
+      margin-left: 30px;
       h5 {
         @include h5();
         color: $color-dark-l;
@@ -23,8 +24,9 @@
       div {
         background-color: $color-primary;
         border-radius: 9px;
-        display: flex;
         padding: 10px 15px;
+        display: flex;
+        width: fit-content;
         &:hover {
           background-color: $color-primary-light;
           cursor: pointer;
@@ -37,6 +39,7 @@
           @include h4();
           color: $color-dark-l;
           padding-left: 15px;
+          display: inline-block;
           a {
             color: inherit;
           }
