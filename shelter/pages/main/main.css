@@ -226,6 +226,7 @@
   color: #292929;
   border: 2px solid #f1cdb3;
   align-self: center;
+  background-color: transparent;
 }
 .pets > div > div .button-arrow:hover {
   border-color: #fddcc4;

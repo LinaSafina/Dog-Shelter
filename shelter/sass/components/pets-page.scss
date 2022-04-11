@@ -18,6 +18,8 @@ main {
       @include flex-row-center();
       align-items: center;
       .button-pagination {
+        @include flex-row-center;
+        align-items: center;
         @include button-arrow;
         margin: 0 10px;
         @include h4();

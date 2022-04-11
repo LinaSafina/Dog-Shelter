@@ -129,6 +129,9 @@ main > div .pagination {
   align-items: center;
 }
 main > div .pagination .button-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100px;
   padding: 23px 19px;
   width: 52px;
