@@ -3,13 +3,13 @@
     radial-gradient(at top left, #5b483a, #262425);
   div {
     padding: 180px $padding 0;
-    display: flex;
+    @include flex-row-center();
     .content {
       @include flex-column();
       background-color: transparent;
       padding: 0;
       margin-top: 163px;
-      margin-right: 42px;
+      align-self: flex-start;
       h2 {
         @include h2();
         color: $color-light-xl;
@@ -33,6 +33,7 @@
     }
     img {
       height: 100%;
+      margin-left: 42px;
     }
   }
 }

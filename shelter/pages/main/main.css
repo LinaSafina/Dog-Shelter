@@ -60,6 +60,7 @@
 .start-screen div {
   padding: 180px 40px 0;
   display: flex;
+  justify-content: center;
 }
 .start-screen div .content {
   display: flex;
@@ -67,7 +68,7 @@
   background-color: transparent;
   padding: 0;
   margin-top: 163px;
-  margin-right: 42px;
+  align-self: flex-start;
 }
 .start-screen div .content h2 {
   font-family: "Georgia";
@@ -108,6 +109,7 @@
 }
 .start-screen div img {
   height: 100%;
+  margin-left: 42px;
 }
 
 .about {
