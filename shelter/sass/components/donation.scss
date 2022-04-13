@@ -4,14 +4,21 @@
     padding: 80px 0 100px;
     @include flex-row-center();
     align-items: center;
+    @media screen and (max-width: 1279px) {
+      flex-direction: column;
+    }
     & > img {
       width: 505px;
       height: 261px;
+      order: 1;
     }
     & > div {
       width: 380px;
-      // height: 282px;
       margin-left: 30px;
+      @media screen and (max-width: 1279px) {
+        margin: 0;
+        margin-bottom: 60px;
+      }
       h5 {
         @include h5();
         color: $color-dark-l;

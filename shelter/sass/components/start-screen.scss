@@ -2,15 +2,25 @@
   background: url('../../assets/images/noise_transparent@2x.png'),
     radial-gradient(at top left, #5b483a, #262425);
   div {
-    padding: 180px $padding 0;
+    padding: 180px $padding-1280 0;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1279px) {
+      padding: 150px $padding-768 0;
+      flex-direction: column;
+    }
     .content {
       @include flex-column();
       background-color: transparent;
       padding: 0;
       margin-top: 163px;
+      width: 460px;
       align-self: flex-start;
+      @media screen and (max-width: 1279px) {
+        margin-top: 0;
+        margin-bottom: 100px;
+        align-self: center;
+      }
       h2 {
         @include h2();
         color: $color-light-xl;
@@ -30,11 +40,20 @@
         &:hover {
           @include dark-button-hover();
         }
+        @media screen and (max-width: 1279px) {
+          align-self: center;
+        }
       }
     }
     img {
       height: 100%;
       margin-left: 42px;
+      @media screen and (max-width: 1279px) {
+        width: 569px;
+        height: 593px;
+        align-self: flex-end;
+        margin: 0;
+      }
     }
   }
 }

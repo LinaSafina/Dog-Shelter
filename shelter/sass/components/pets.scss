@@ -2,8 +2,12 @@
   font-family: $font-georgia;
   background-color: $color-light-l;
   & > div {
-    padding: 80px $padding 0;
+    padding: 80px $padding-1280 100px;
     text-align: center;
+    @media screen and (max-width: 1279px) {
+      padding-left: $padding-768;
+      padding-right: $padding-768;
+    }
     h3 {
       @include h3();
       color: $color-dark-l;
@@ -19,18 +23,27 @@
           @include light-button-hover();
         }
       }
-      .right {
-        margin-right: 8px;
-      }
-      .left {
-        margin-left: 8px;
+      .pet-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 90px;
+        margin: 0 53px;
+        @media screen and (max-width: 1279px) {
+          margin: 0 12px;
+          column-gap: 40px;
+          grid-template-columns: 1fr 1fr;
+        }
+        #woody {
+          @media screen and (max-width: 1279px) {
+            display: none;
+          }
+        }
       }
     }
     a[type='button'] {
       display: inline-block;
       @include button();
       background-color: $color-primary;
-      margin-bottom: 100px;
       &:hover {
         @include dark-button-hover;
       }

@@ -1,7 +1,11 @@
 .help {
   background-color: white;
   .help-content {
-    padding: 80px $padding 45px;
+    padding: 80px $padding-1280 45px;
+    @media screen and (max-width: 1279px) {
+      padding-left: $padding-768;
+      padding-right: $padding-768;
+    }
     h3 {
       @include h3();
       text-align: center;
@@ -12,8 +16,18 @@
       @include flex-row-center();
       flex-wrap: wrap;
       text-align: center;
+      @media screen and (max-width: 1279px) {
+        margin-right: 39px;
+        margin-left: 39px;
+        justify-content: space-between;
+      }
       li {
         margin: 0 60px 55px;
+        @media screen and (max-width: 1279px) {
+          width: 170px;
+          margin: 0;
+          margin-bottom: 55px;
+        }
         img {
           width: 60px;
           height: 60px;

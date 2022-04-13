@@ -2,13 +2,22 @@ footer {
   background: url('../../assets/images/noise_transparent@2x.png'),
     radial-gradient(at left, #513d2f, #1a1a1c);
   & > div {
-    padding: 40px $padding 0;
+    padding: 40px $padding-1280 0;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1279px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: $padding-768 $padding-768 0;
+    }
     & > div {
+      height: 234px;
       @include flex-column();
       justify-content: space-between;
       margin: 16px 0 60px;
+      @media screen and (max-width: 1279px) {
+        margin: 0 30px 65px;
+      }
       h3 {
         @include h3();
         color: $color-light-xl;

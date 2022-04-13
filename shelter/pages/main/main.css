@@ -62,13 +62,27 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1279px) {
+  .start-screen div {
+    padding: 150px 30px 0;
+    flex-direction: column;
+  }
+}
 .start-screen div .content {
   display: flex;
   flex-direction: column;
   background-color: transparent;
   padding: 0;
   margin-top: 163px;
+  width: 460px;
   align-self: flex-start;
+}
+@media screen and (max-width: 1279px) {
+  .start-screen div .content {
+    margin-top: 0;
+    margin-bottom: 100px;
+    align-self: center;
+  }
 }
 .start-screen div .content h2 {
   font-family: "Georgia";
@@ -107,22 +121,44 @@
   background-color: #fddcc4;
   cursor: pointer;
 }
+@media screen and (max-width: 1279px) {
+  .start-screen div .content a[type=button] {
+    align-self: center;
+  }
+}
 .start-screen div img {
   height: 100%;
   margin-left: 42px;
+}
+@media screen and (max-width: 1279px) {
+  .start-screen div img {
+    width: 569px;
+    height: 593px;
+    align-self: flex-end;
+    margin: 0;
+  }
 }
 
 .about {
   background-color: white;
 }
 .about > div {
-  padding: 80px 40px 101px;
+  padding: 80px 40px 100px;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 1279px) {
+  .about > div {
+    padding-right: 30px;
+    padding-left: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .about > div img {
   width: 300px;
   height: 408px;
+  order: 1;
 }
 .about > div div {
   display: flex;
@@ -130,6 +166,12 @@
   justify-content: center;
   width: 430px;
   margin-left: 120px;
+}
+@media screen and (max-width: 1279px) {
+  .about > div div {
+    margin: 0;
+    margin-bottom: 80px;
+  }
 }
 .about > div div h3 {
   font-family: Georgia, Verdana, serif;
@@ -154,7 +196,6 @@
   display: flex;
   flex-direction: column;
   background-color: #fafafa;
-  margin: 0 45px;
 }
 .pet-card:hover {
   background-color: #fff;
@@ -202,8 +243,14 @@
   background-color: #f6f6f6;
 }
 .pets > div {
-  padding: 80px 40px 0;
+  padding: 80px 40px 100px;
   text-align: center;
+}
+@media screen and (max-width: 1279px) {
+  .pets > div {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .pets > div h3 {
   font-family: Georgia, Verdana, serif;
@@ -236,11 +283,23 @@
   background-color: #fddcc4;
   cursor: pointer;
 }
-.pets > div > div .right {
-  margin-right: 8px;
+.pets > div > div .pet-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 90px;
+  margin: 0 53px;
 }
-.pets > div > div .left {
-  margin-left: 8px;
+@media screen and (max-width: 1279px) {
+  .pets > div > div .pet-container {
+    margin: 0 12px;
+    column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .pets > div > div .pet-container #woody {
+    display: none;
+  }
 }
 .pets > div a[type=button] {
   display: inline-block;
@@ -254,7 +313,6 @@
   border-radius: 100px;
   padding: 15px 45px;
   background-color: #f1cdb3;
-  margin-bottom: 100px;
 }
 .pets > div a[type=button]:hover {
   background-color: #fddcc4;
@@ -266,6 +324,12 @@
 }
 .help .help-content {
   padding: 80px 40px 45px;
+}
+@media screen and (max-width: 1279px) {
+  .help .help-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .help .help-content h3 {
   font-family: Georgia, Verdana, serif;
@@ -284,8 +348,22 @@
   flex-wrap: wrap;
   text-align: center;
 }
+@media screen and (max-width: 1279px) {
+  .help .help-content ul {
+    margin-right: 39px;
+    margin-left: 39px;
+    justify-content: space-between;
+  }
+}
 .help .help-content ul li {
   margin: 0 60px 55px;
+}
+@media screen and (max-width: 1279px) {
+  .help .help-content ul li {
+    width: 170px;
+    margin: 0;
+    margin-bottom: 55px;
+  }
 }
 .help .help-content ul li img {
   width: 60px;
@@ -310,13 +388,25 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1279px) {
+  .donations .donations-content {
+    flex-direction: column;
+  }
+}
 .donations .donations-content > img {
   width: 505px;
   height: 261px;
+  order: 1;
 }
 .donations .donations-content > div {
   width: 380px;
   margin-left: 30px;
+}
+@media screen and (max-width: 1279px) {
+  .donations .donations-content > div {
+    margin: 0;
+    margin-bottom: 60px;
+  }
 }
 .donations .donations-content > div h5 {
   font-family: Georgia, Verdana, serif;
@@ -384,11 +474,24 @@ footer > div {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1279px) {
+  footer > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 30px 0;
+  }
+}
 footer > div > div {
+  height: 234px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 16px 0 60px;
+}
+@media screen and (max-width: 1279px) {
+  footer > div > div {
+    margin: 0 30px 65px;
+  }
 }
 footer > div > div h3 {
   font-family: Georgia, Verdana, serif;
@@ -435,7 +538,12 @@ header {
   left: 0;
   justify-content: space-between;
   width: 100%;
-  padding: 60px 40px 0px;
+  padding: 60px 40px 0;
+}
+@media screen and (max-width: 1279px) {
+  header {
+    padding: 30px 30px 0;
+  }
 }
 header .logo .title {
   font-family: Georgia, Verdana, serif;
@@ -499,6 +607,11 @@ header .nav-menu ul li .current-link:after {
   position: relative;
   width: 1280px;
   margin: auto;
+}
+@media screen and (max-width: 1279px) {
+  .wrapper {
+    width: 100%;
+  }
 }
 
 body {

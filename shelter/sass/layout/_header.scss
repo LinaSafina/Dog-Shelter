@@ -5,7 +5,10 @@ header {
   left: 0;
   justify-content: space-between;
   width: 100%;
-  padding: 60px $padding 0px;
+  padding: 60px $padding-1280 0;
+  @media screen and (max-width: 1279px) {
+    padding: $padding-768 $padding-768 0;
+  }
   .logo {
     .title {
       @include logo_title();
