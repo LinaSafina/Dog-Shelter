@@ -1,34 +1,62 @@
 footer {
-  background: url('../../assets/images/noise_transparent@2x.png'),
-    radial-gradient(at left, #513d2f, #1a1a1c);
   & > div {
+    background: url('../../assets/images/noise_transparent@2x.png'),
+      radial-gradient(at left, #513d2f, #1a1a1c);
     padding: 40px $padding-1280 0;
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 1279px) {
       flex-wrap: wrap;
       justify-content: center;
-      padding: $padding-768 $padding-768 0;
+      padding: 30px $padding-768 0;
     }
-    & > div {
+    @media screen and (max-width: 767px) {
+      padding: 29px $padding-320 0;
+      text-align: center;
+      align-items: space-between;
+    }
+    .contacts,
+    .locations {
       height: 234px;
       @include flex-column();
       justify-content: space-between;
       margin: 16px 0 60px;
       @media screen and (max-width: 1279px) {
         margin: 0 30px 65px;
+        justify-content: center;
+      }
+      @media screen and (max-width: 767px) {
+        margin: 0;
+        margin-bottom: 40px;
+        height: fit-content;
       }
       h3 {
         @include h3();
         color: $color-light-xl;
+        br {
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          @include h3-mobile();
+          justify-content: center;
+          padding: 0 15px;
+        }
       }
       div {
         a {
           display: flex;
           align-items: center;
+          @media screen and (max-width: 1279px) {
+            padding-top: 33px;
+          }
+          @media screen and (max-width: 767px) {
+            justify-content: center;
+            padding-top: 40px;
+          }
           img {
             width: 40px;
-            height: 32px;
           }
           h4 {
             @include h4();
@@ -46,11 +74,19 @@ footer {
             height: 32px;
           }
         }
+        @media screen and (max-width: 767px) {
+          text-align: start;
+          align-self: flex-start;
+        }
       }
     }
     & > img {
       width: 300px;
       height: 310px;
+      @media screen and (max-width: 767px) {
+        width: 260px;
+        height: 269px;
+      }
     }
   }
 }

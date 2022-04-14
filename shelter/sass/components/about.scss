@@ -1,7 +1,7 @@
 .about {
   background-color: white;
   & > div {
-    padding: 80px $padding-1280 100px;
+    padding: 80px $padding-1280 99px;
     @include flex-row-center();
     @media screen and (max-width: 1279px) {
       padding-right: $padding-768;
@@ -9,10 +9,20 @@
       flex-direction: column;
       align-items: center;
     }
+    @media screen and (max-width: 767px) {
+      padding: 42px $padding-320;
+    }
     img {
       width: 300px;
       height: 408px;
-      order: 1;
+      @media screen and (max-width: 1279px) {
+        order: 1;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 260px;
+        height: 353.6px;
+      }
     }
     div {
       @include flex-column();
@@ -23,14 +33,28 @@
         margin: 0;
         margin-bottom: 80px;
       }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 42px;
+      }
       h3 {
         @include h3();
         color: $color-dark-l;
+        @media screen and (max-width: 767px) {
+          text-align: center;
+          @include h3-mobile();
+        }
       }
       p {
         @include paragraph-l();
         color: $color-dark-xl;
         margin-top: 25px;
+        @media screen and (max-width: 767px) {
+          text-align: justify;
+          margin-top: 22px;
+        }
       }
     }
   }

@@ -3,38 +3,61 @@
   .help-content {
     padding: 80px $padding-1280 45px;
     @media screen and (max-width: 1279px) {
-      padding-left: $padding-768;
-      padding-right: $padding-768;
+      padding: 80px $padding-768 100px;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 42px $padding-320;
     }
     h3 {
       @include h3();
       text-align: center;
       color: $color-dark-l;
+      @media screen and (max-width: 767px) {
+        @include h3-mobile();
+      }
     }
     ul {
-      margin-top: 60px;
+      margin-top: 59px;
       @include flex-row-center();
       flex-wrap: wrap;
       text-align: center;
       @media screen and (max-width: 1279px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 55px 60px;
         margin-right: 39px;
         margin-left: 39px;
-        justify-content: space-between;
+      }
+      @media screen and (max-width: 767px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin: 42px 0 0;
       }
       li {
         margin: 0 60px 55px;
         @media screen and (max-width: 1279px) {
           width: 170px;
           margin: 0;
-          margin-bottom: 55px;
+        }
+        @media screen and (max-width: 767px) {
+          width: 130px;
         }
         img {
           width: 60px;
           height: 60px;
+          @media screen and (max-width: 767px) {
+            width: 50px;
+            height: 50px;
+          }
         }
         h4 {
           @include h4();
           padding-top: 26px;
+          @media screen and (max-width: 767px) {
+            @include h5();
+            padding-top: 16px;
+          }
         }
       }
     }

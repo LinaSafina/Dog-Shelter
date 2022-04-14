@@ -98,6 +98,25 @@
   line-height: 160%;
   font-style: normal;
   font-weight: normal;
+  color: $color-dark-xl;
+}
+
+@mixin paragraph-s() {
+  font-family: $font-arial;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: $color-dark-xl;
+}
+
+@mixin paragraph-mobile-menu() {
+  font-family: $font-arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 160%;
+  color: $color-dark-xl;
 }
 
 @mixin logo_title() {
@@ -116,4 +135,9 @@
   letter-spacing: 0.1em;
   font-style: normal;
   font-weight: 400;
+}
+
+@mixin h3-mobile() {
+  @include h3();
+  font-size: 25px;
 }

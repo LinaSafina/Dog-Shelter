@@ -68,6 +68,13 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 767px) {
+  .start-screen div {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+}
 .start-screen div .content {
   display: flex;
   flex-direction: column;
@@ -80,8 +87,13 @@
 @media screen and (max-width: 1279px) {
   .start-screen div .content {
     margin-top: 0;
-    margin-bottom: 100px;
     align-self: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start-screen div .content {
+    width: 100%;
   }
 }
 .start-screen div .content h2 {
@@ -91,7 +103,17 @@
   font-style: normal;
   font-weight: 400;
   color: #fff;
-  padding-right: 150px;
+}
+@media screen and (max-width: 767px) {
+  .start-screen div .content h2 {
+    font-family: Georgia, Verdana, serif;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+  }
 }
 .start-screen div .content p {
   font-family: Arial, sans-serif;
@@ -99,6 +121,7 @@
   line-height: 160%;
   font-style: normal;
   font-weight: normal;
+  color: #4c4c4c;
   color: #cdcdcd;
   margin: 42px 0;
 }
@@ -127,7 +150,8 @@
   }
 }
 .start-screen div img {
-  height: 100%;
+  width: 698px;
+  height: 728px;
   margin-left: 42px;
 }
 @media screen and (max-width: 1279px) {
@@ -136,6 +160,14 @@
     height: 593px;
     align-self: flex-end;
     margin: 0;
+    margin-top: 99px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start-screen div img {
+    width: 260px;
+    height: 271.77px;
+    margin-top: 104px;
   }
 }
 
@@ -143,7 +175,7 @@
   background-color: white;
 }
 .about > div {
-  padding: 80px 40px 100px;
+  padding: 80px 40px 99px;
   display: flex;
   justify-content: center;
 }
@@ -155,10 +187,25 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 767px) {
+  .about > div {
+    padding: 42px 10px;
+  }
+}
 .about > div img {
   width: 300px;
   height: 408px;
-  order: 1;
+}
+@media screen and (max-width: 1279px) {
+  .about > div img {
+    order: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about > div img {
+    width: 260px;
+    height: 353.6px;
+  }
 }
 .about > div div {
   display: flex;
@@ -173,6 +220,14 @@
     margin-bottom: 80px;
   }
 }
+@media screen and (max-width: 767px) {
+  .about > div div {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 42px;
+  }
+}
 .about > div div h3 {
   font-family: Georgia, Verdana, serif;
   font-size: 35px;
@@ -182,6 +237,18 @@
   font-weight: 400;
   color: #545454;
 }
+@media screen and (max-width: 767px) {
+  .about > div div h3 {
+    text-align: center;
+    font-family: Georgia, Verdana, serif;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+  }
+}
 .about > div div p {
   font-family: Arial, sans-serif;
   font-size: 15px;
@@ -189,7 +256,14 @@
   font-style: normal;
   font-weight: normal;
   color: #4c4c4c;
+  color: #4c4c4c;
   margin-top: 25px;
+}
+@media screen and (max-width: 767px) {
+  .about > div div p {
+    text-align: justify;
+    margin-top: 22px;
+  }
 }
 
 .pet-card {
@@ -252,6 +326,11 @@
     padding-right: 30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .pets > div {
+    padding: 42px 10px;
+  }
+}
 .pets > div h3 {
   font-family: Georgia, Verdana, serif;
   font-size: 35px;
@@ -261,9 +340,27 @@
   font-weight: 400;
   color: #545454;
 }
+@media screen and (max-width: 767px) {
+  .pets > div h3 {
+    font-family: Georgia, Verdana, serif;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+  }
+}
 .pets > div > div {
   margin: 60px 0;
   display: flex;
+}
+@media screen and (max-width: 767px) {
+  .pets > div > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 42px 0;
+  }
 }
 .pets > div > div .button-arrow {
   border-radius: 100px;
@@ -283,6 +380,11 @@
   background-color: #fddcc4;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .pets > div > div .button-arrow {
+    margin: 20px 40px 0;
+  }
+}
 .pets > div > div .pet-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -296,8 +398,19 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (max-width: 767px) {
+  .pets > div > div .pet-container {
+    display: block;
+    order: -1;
+  }
+}
 @media screen and (max-width: 1279px) {
   .pets > div > div .pet-container #woody {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pets > div > div .pet-container #jennifer {
     display: none;
   }
 }
@@ -327,8 +440,12 @@
 }
 @media screen and (max-width: 1279px) {
   .help .help-content {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 80px 30px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help .help-content {
+    padding: 42px 10px;
   }
 }
 .help .help-content h3 {
@@ -341,8 +458,19 @@
   text-align: center;
   color: #545454;
 }
+@media screen and (max-width: 767px) {
+  .help .help-content h3 {
+    font-family: Georgia, Verdana, serif;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+  }
+}
 .help .help-content ul {
-  margin-top: 60px;
+  margin-top: 59px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -350,9 +478,19 @@
 }
 @media screen and (max-width: 1279px) {
   .help .help-content ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 55px 60px;
     margin-right: 39px;
     margin-left: 39px;
-    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help .help-content ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 42px 0 0;
   }
 }
 .help .help-content ul li {
@@ -362,12 +500,22 @@
   .help .help-content ul li {
     width: 170px;
     margin: 0;
-    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help .help-content ul li {
+    width: 130px;
   }
 }
 .help .help-content ul li img {
   width: 60px;
   height: 60px;
+}
+@media screen and (max-width: 767px) {
+  .help .help-content ul li img {
+    width: 50px;
+    height: 50px;
+  }
 }
 .help .help-content ul li h4 {
   font-family: Georgia, Verdana, serif;
@@ -378,12 +526,23 @@
   letter-spacing: 0.06em;
   padding-top: 26px;
 }
+@media screen and (max-width: 767px) {
+  .help .help-content ul li h4 {
+    font-family: Georgia, Verdana, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    padding-top: 16px;
+  }
+}
 
 .donations {
   background-color: #f6f6f6;
 }
 .donations .donations-content {
-  padding: 80px 0 100px;
+  padding: 80px 0 99px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,12 +550,26 @@
 @media screen and (max-width: 1279px) {
   .donations .donations-content {
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donations .donations-content {
+    padding: 42px 10px;
   }
 }
 .donations .donations-content > img {
   width: 505px;
-  height: 261px;
-  order: 1;
+}
+@media screen and (max-width: 1279px) {
+  .donations .donations-content > img {
+    order: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donations .donations-content > img {
+    width: 260px;
+  }
 }
 .donations .donations-content > div {
   width: 380px;
@@ -406,6 +579,12 @@
   .donations .donations-content > div {
     margin: 0;
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donations .donations-content > div {
+    margin-bottom: 42px;
+    width: 100%;
   }
 }
 .donations .donations-content > div h5 {
@@ -418,6 +597,13 @@
   color: #545454;
   padding: 20px 0;
 }
+@media screen and (max-width: 767px) {
+  .donations .donations-content > div h5 {
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 160%;
+  }
+}
 .donations .donations-content > div h3 {
   font-family: Georgia, Verdana, serif;
   font-size: 35px;
@@ -426,6 +612,18 @@
   font-style: normal;
   font-weight: 400;
   color: #545454;
+}
+@media screen and (max-width: 767px) {
+  .donations .donations-content > div h3 {
+    font-family: Georgia, Verdana, serif;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+  }
 }
 .donations .donations-content > div div {
   background-color: #f1cdb3;
@@ -437,6 +635,11 @@
 .donations .donations-content > div div:hover {
   background-color: #fddcc4;
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .donations .donations-content > div div {
+    margin: 0 auto;
+  }
 }
 .donations .donations-content > div div img {
   width: 30px;
@@ -456,6 +659,11 @@
 .donations .donations-content > div div h4 a a {
   color: inherit;
 }
+@media screen and (max-width: 767px) {
+  .donations .donations-content > div div h4 a {
+    font-size: 15px;
+  }
+}
 .donations .donations-content > div p {
   font-family: "Arial";
   font-style: italic;
@@ -465,11 +673,15 @@
   color: #b2b2b2;
   margin-top: 20px;
 }
-
-footer {
-  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(at left, #513d2f, #1a1a1c);
+@media screen and (max-width: 767px) {
+  .donations .donations-content > div p {
+    text-align: justify;
+    padding: 0 10px;
+  }
 }
+
 footer > div {
+  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(at left, #513d2f, #1a1a1c);
   padding: 40px 40px 0;
   display: flex;
   justify-content: space-between;
@@ -481,7 +693,15 @@ footer > div {
     padding: 30px 30px 0;
   }
 }
-footer > div > div {
+@media screen and (max-width: 767px) {
+  footer > div {
+    padding: 29px 10px 0;
+    text-align: center;
+    align-items: space-between;
+  }
+}
+footer > div .contacts,
+footer > div .locations {
   height: 234px;
   display: flex;
   flex-direction: column;
@@ -489,11 +709,22 @@ footer > div > div {
   margin: 16px 0 60px;
 }
 @media screen and (max-width: 1279px) {
-  footer > div > div {
+  footer > div .contacts,
+footer > div .locations {
     margin: 0 30px 65px;
+    justify-content: center;
   }
 }
-footer > div > div h3 {
+@media screen and (max-width: 767px) {
+  footer > div .contacts,
+footer > div .locations {
+    margin: 0;
+    margin-bottom: 40px;
+    height: fit-content;
+  }
+}
+footer > div .contacts h3,
+footer > div .locations h3 {
   font-family: Georgia, Verdana, serif;
   font-size: 35px;
   line-height: 130%;
@@ -502,15 +733,50 @@ footer > div > div h3 {
   font-weight: 400;
   color: #fff;
 }
-footer > div > div div a {
+@media screen and (max-width: 767px) {
+  footer > div .contacts h3 br,
+footer > div .locations h3 br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer > div .contacts h3,
+footer > div .locations h3 {
+    font-family: Georgia, Verdana, serif;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    justify-content: center;
+    padding: 0 15px;
+  }
+}
+footer > div .contacts div a,
+footer > div .locations div a {
   display: flex;
   align-items: center;
 }
-footer > div > div div a img {
-  width: 40px;
-  height: 32px;
+@media screen and (max-width: 1279px) {
+  footer > div .contacts div a,
+footer > div .locations div a {
+    padding-top: 33px;
+  }
 }
-footer > div > div div a h4 {
+@media screen and (max-width: 767px) {
+  footer > div .contacts div a,
+footer > div .locations div a {
+    justify-content: center;
+    padding-top: 40px;
+  }
+}
+footer > div .contacts div a img,
+footer > div .locations div a img {
+  width: 40px;
+}
+footer > div .contacts div a h4,
+footer > div .locations div a h4 {
   font-family: Georgia, Verdana, serif;
   font-style: normal;
   font-weight: 400;
@@ -521,14 +787,31 @@ footer > div > div div a h4 {
   padding-left: 20px;
   align-self: center;
 }
-footer > div > div .boston a img,
-footer > div > div .london a img {
+footer > div .contacts .boston a img,
+footer > div .contacts .london a img,
+footer > div .locations .boston a img,
+footer > div .locations .london a img {
   width: 22px;
   height: 32px;
+}
+@media screen and (max-width: 767px) {
+  footer > div .contacts .boston,
+footer > div .contacts .london,
+footer > div .locations .boston,
+footer > div .locations .london {
+    text-align: start;
+    align-self: flex-start;
+  }
 }
 footer > div > img {
   width: 300px;
   height: 310px;
+}
+@media screen and (max-width: 767px) {
+  footer > div > img {
+    width: 260px;
+    height: 269px;
+  }
 }
 
 header {
@@ -537,12 +820,18 @@ header {
   top: 0;
   left: 0;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 60px 40px 0;
 }
 @media screen and (max-width: 1279px) {
   header {
     padding: 30px 30px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    padding: 30px 10px 0;
   }
 }
 header .logo .title {
@@ -567,10 +856,27 @@ header .logo .subtitle {
   padding-top: 10px;
   padding-left: 4px;
 }
+header .menu-icon {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  header .menu-icon {
+    display: block;
+    height: 22px;
+    width: 30px;
+    margin-right: 43px;
+    background: linear-gradient(to bottom, #f1cdb3 0%, #f1cdb3 9%, transparent 9%, transparent 45.5%, #f1cdb3 45.5%, #f1cdb3 54.5%, transparent 54.5%, transparent 91%, #f1cdb3 91%, #f1cdb3 100%);
+  }
+}
 header .nav-menu {
   width: 443px;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  header .nav-menu {
+    display: none;
+  }
 }
 header .nav-menu ul {
   width: 100%;
@@ -583,6 +889,7 @@ header .nav-menu ul li a {
   line-height: 160%;
   font-style: normal;
   font-weight: normal;
+  color: #4c4c4c;
   color: #cdcdcd;
 }
 header .nav-menu ul li a:hover {
@@ -601,6 +908,15 @@ header .nav-menu ul li .current-link:after {
   width: 100%;
   height: 4px;
   background-color: #f1cdb3;
+}
+@media screen and (max-width: 767px) {
+  header .nav-menu {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .wrapper {

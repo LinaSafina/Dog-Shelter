@@ -9,6 +9,11 @@
       padding: 150px $padding-768 0;
       flex-direction: column;
     }
+    @media screen and (max-width: 767px) {
+      padding-right: $padding-320;
+      padding-left: $padding-320;
+      text-align: center;
+    }
     .content {
       @include flex-column();
       background-color: transparent;
@@ -18,13 +23,18 @@
       align-self: flex-start;
       @media screen and (max-width: 1279px) {
         margin-top: 0;
-        margin-bottom: 100px;
         align-self: center;
+        justify-content: center;
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
       }
       h2 {
         @include h2();
         color: $color-light-xl;
-        padding-right: 150px;
+        @media screen and (max-width: 767px) {
+          @include h3-mobile();
+        }
       }
       p {
         @include paragraph-l();
@@ -46,13 +56,20 @@
       }
     }
     img {
-      height: 100%;
+      width: 698px;
+      height: 728px;
       margin-left: 42px;
       @media screen and (max-width: 1279px) {
         width: 569px;
         height: 593px;
         align-self: flex-end;
         margin: 0;
+        margin-top: 99px;
+      }
+      @media screen and (max-width: 767px) {
+        width: 260px;
+        height: 271.77px;
+        margin-top: 104px;
       }
     }
   }

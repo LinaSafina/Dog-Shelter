@@ -4,10 +4,14 @@ header {
   top: 0;
   left: 0;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 60px $padding-1280 0;
   @media screen and (max-width: 1279px) {
     padding: $padding-768 $padding-768 0;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 30px $padding-320 0;
   }
   .logo {
     .title {
@@ -23,10 +27,35 @@ header {
       padding-left: 4px;
     }
   }
+  .menu-icon {
+    display: none;
+    @media screen and (max-width: 767px) {
+      display: block;
+      height: 22px;
+      width: 30px;
+      margin-right: 43px;
+      background: linear-gradient(
+        to bottom,
+        $color-primary 0%,
+        $color-primary 9%,
+        transparent 9%,
+        transparent 45.5%,
+        $color-primary 45.5%,
+        $color-primary 54.5%,
+        transparent 54.5%,
+        transparent 91%,
+        $color-primary 91%,
+        $color-primary 100%
+      );
+    }
+  }
   .nav-menu {
     width: 443px;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
     ul {
       width: 100%;
       display: flex;
@@ -54,6 +83,9 @@ header {
           }
         }
       }
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
     }
   }
 }
