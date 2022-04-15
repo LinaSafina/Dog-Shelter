@@ -58,6 +58,7 @@
   display: flex;
   flex-direction: column;
   background-color: #fafafa;
+  width: 270px;
 }
 .pet-card:hover {
   background-color: #fff;
@@ -88,6 +89,7 @@
   color: #292929;
   border-radius: 100px;
   padding: 15px 45px;
+  width: 187px;
   margin: 0 41.5px 30px;
   border: 2px solid #f1cdb3;
   background-color: transparent;
@@ -101,6 +103,7 @@
 }
 
 main {
+  margin: 0 auto;
   padding: 0 40px;
 }
 @media screen and (max-width: 1279px) {
@@ -156,6 +159,7 @@ main > div .pet-container {
 }
 @media screen and (max-width: 1279px) {
   main > div .pet-container {
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin: 30px 64px 40px;
@@ -163,6 +167,7 @@ main > div .pet-container {
 }
 @media screen and (max-width: 767px) {
   main > div .pet-container {
+    justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 30px;
@@ -239,9 +244,11 @@ footer > div {
 }
 @media screen and (max-width: 767px) {
   footer > div {
+    flex-direction: column;
+    flex-wrap: nowrap;
     padding: 29px 10px 0;
     text-align: center;
-    align-items: space-between;
+    align-items: center;
   }
 }
 footer > div .contacts,
@@ -264,6 +271,7 @@ footer > div .locations {
     margin: 0;
     margin-bottom: 40px;
     height: fit-content;
+    width: 300px;
   }
 }
 footer > div .contacts h3,

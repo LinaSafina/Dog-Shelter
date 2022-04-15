@@ -1,12 +1,12 @@
 .help {
   background-color: white;
   .help-content {
-    padding: 80px $padding-1280 45px;
+    padding: 80px $padding-1280 100px;
     @media screen and (max-width: 1279px) {
       padding: 80px $padding-768 100px;
     }
     @media screen and (max-width: 767px) {
-      padding: 42px $padding-320;
+      padding: 42px $padding-320 43px;
     }
     h3 {
       @include h3();
@@ -21,21 +21,22 @@
       @include flex-row-center();
       flex-wrap: wrap;
       text-align: center;
+      row-gap: 55px;
       @media screen and (max-width: 1279px) {
         display: grid;
+        justify-items: center;
         grid-template-columns: repeat(3, 1fr);
         gap: 55px 60px;
         margin-right: 39px;
         margin-left: 39px;
       }
       @media screen and (max-width: 767px) {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
         margin: 42px 0 0;
       }
       li {
-        margin: 0 60px 55px;
+        margin: 0 60px;
         @media screen and (max-width: 1279px) {
           width: 170px;
           margin: 0;

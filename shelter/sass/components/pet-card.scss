@@ -1,6 +1,7 @@
 .pet-card {
   @include flex-column();
   background-color: $color-light-s;
+  width: 270px;
   &:hover {
     background-color: $color-light-xl;
     cursor: pointer;
@@ -22,6 +23,7 @@
   }
   button {
     @include button();
+    width:187px;
     margin: 0 41.5px 30px;
     border: 2px solid $color-primary;
     background-color: transparent;

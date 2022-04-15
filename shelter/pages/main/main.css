@@ -175,7 +175,7 @@
   background-color: white;
 }
 .about > div {
-  padding: 80px 40px 99px;
+  padding: 80px 40px 100px;
   display: flex;
   justify-content: center;
 }
@@ -189,7 +189,7 @@
 }
 @media screen and (max-width: 767px) {
   .about > div {
-    padding: 42px 10px;
+    padding: 42px 10px 42px;
   }
 }
 .about > div img {
@@ -270,6 +270,7 @@
   display: flex;
   flex-direction: column;
   background-color: #fafafa;
+  width: 270px;
 }
 .pet-card:hover {
   background-color: #fff;
@@ -300,6 +301,7 @@
   color: #292929;
   border-radius: 100px;
   padding: 15px 45px;
+  width: 187px;
   margin: 0 41.5px 30px;
   border: 2px solid #f1cdb3;
   background-color: transparent;
@@ -328,6 +330,10 @@
 }
 @media screen and (max-width: 767px) {
   .pets > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 42px;
     padding: 42px 10px;
   }
 }
@@ -355,11 +361,16 @@
   margin: 60px 0;
   display: flex;
 }
+@media screen and (max-width: 1279px) {
+  .pets > div > div {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 767px) {
   .pets > div > div {
     flex-wrap: wrap;
     justify-content: center;
-    margin: 42px 0;
+    margin: 0;
   }
 }
 .pets > div > div .button-arrow {
@@ -400,7 +411,9 @@
 }
 @media screen and (max-width: 767px) {
   .pets > div > div .pet-container {
-    display: block;
+    display: grid;
+    grid-template-columns: 90vw;
+    justify-items: center;
     order: -1;
   }
 }
@@ -426,6 +439,8 @@
   border-radius: 100px;
   padding: 15px 45px;
   background-color: #f1cdb3;
+  width: 260px;
+  white-space: nowrap;
 }
 .pets > div a[type=button]:hover {
   background-color: #fddcc4;
@@ -436,7 +451,7 @@
   background-color: white;
 }
 .help .help-content {
-  padding: 80px 40px 45px;
+  padding: 80px 40px 100px;
 }
 @media screen and (max-width: 1279px) {
   .help .help-content {
@@ -445,7 +460,7 @@
 }
 @media screen and (max-width: 767px) {
   .help .help-content {
-    padding: 42px 10px;
+    padding: 42px 10px 43px;
   }
 }
 .help .help-content h3 {
@@ -475,10 +490,12 @@
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  row-gap: 55px;
 }
 @media screen and (max-width: 1279px) {
   .help .help-content ul {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 55px 60px;
     margin-right: 39px;
@@ -487,14 +504,13 @@
 }
 @media screen and (max-width: 767px) {
   .help .help-content ul {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     margin: 42px 0 0;
   }
 }
 .help .help-content ul li {
-  margin: 0 60px 55px;
+  margin: 0 60px;
 }
 @media screen and (max-width: 1279px) {
   .help .help-content ul li {
@@ -695,9 +711,11 @@ footer > div {
 }
 @media screen and (max-width: 767px) {
   footer > div {
+    flex-direction: column;
+    flex-wrap: nowrap;
     padding: 29px 10px 0;
     text-align: center;
-    align-items: space-between;
+    align-items: center;
   }
 }
 footer > div .contacts,
@@ -712,7 +730,6 @@ footer > div .locations {
   footer > div .contacts,
 footer > div .locations {
     margin: 0 30px 65px;
-    justify-content: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -721,6 +738,7 @@ footer > div .locations {
     margin: 0;
     margin-bottom: 40px;
     height: fit-content;
+    width: 300px;
   }
 }
 footer > div .contacts h3,
