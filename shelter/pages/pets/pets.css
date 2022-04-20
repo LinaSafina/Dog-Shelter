@@ -1,56 +1,71 @@
 @font-face {
-  font-family: "Georgia";
-  src: url("../../assets/fonts/Georgia1/Georgia.eot");
-  src: url("../../assets/fonts/Georgia1/Georgia.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia.ttf") format("truetype");
+  font-family: 'Georgia';
+  src: url('../../assets/fonts/Georgia1/Georgia.eot');
+  src: url('../../assets/fonts/Georgia1/Georgia.eot') format('eot'),
+    url('../../assets/fonts/Georgia1/Georgia.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Georgia";
-  src: url("../../assets/fonts/Georgia1/Georgia-Bold.eot");
-  src: url("../../assets/fonts/Georgia1/Georgia-Bold.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-Bold.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-Bold.woff") format("woff");
+  font-family: 'Georgia';
+  src: url('../../assets/fonts/Georgia1/Georgia-Bold.eot');
+  src: url('../../assets/fonts/Georgia1/Georgia-Bold.eot') format('eot'),
+    url('../../assets/fonts/Georgia1/Georgia-Bold.ttf') format('truetype'),
+    url('../../assets/fonts/Georgia1/Georgia-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Georgia";
-  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot");
-  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-BoldItalic.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-BoldItalic.woff") format("woff");
+  font-family: 'Georgia';
+  src: url('../../assets/fonts/Georgia1/Georgia-BoldItalic.eot');
+  src: url('../../assets/fonts/Georgia1/Georgia-BoldItalic.eot') format('eot'),
+    url('../../assets/fonts/Georgia1/Georgia-BoldItalic.ttf') format('truetype'),
+    url('../../assets/fonts/Georgia1/Georgia-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
-  font-family: "Georgia";
-  src: url("../../assets/fonts/Georgia1/Georgia-Italic.eot");
-  src: url("../../assets/fonts/Georgia1/Georgia-BoldItalic.eot") format("eot"), url("../../assets/fonts/Georgia1/Georgia-Italic.ttf") format("truetype"), url("../../assets/fonts/Georgia1/Georgia-Italic.woff") format("woff");
+  font-family: 'Georgia';
+  src: url('../../assets/fonts/Georgia1/Georgia-Italic.eot');
+  src: url('../../assets/fonts/Georgia1/Georgia-BoldItalic.eot') format('eot'),
+    url('../../assets/fonts/Georgia1/Georgia-Italic.ttf') format('truetype'),
+    url('../../assets/fonts/Georgia1/Georgia-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: "Arial";
-  src: url("../../assets/fonts/Arial1/Arial-BoldItalicMT.eot");
-  src: url("../../assets/fonts/Arial1/Arial-BoldItalicMT.eot") format("eot"), url("../../assets/fonts/Arial1/Arial-BoldItalicMT.ttf") format("truetype"), url("../../assets/fonts/Arial1/Arial-BoldItalicMT.woff") format("woff");
+  font-family: 'Arial';
+  src: url('../../assets/fonts/Arial1/Arial-BoldItalicMT.eot');
+  src: url('../../assets/fonts/Arial1/Arial-BoldItalicMT.eot') format('eot'),
+    url('../../assets/fonts/Arial1/Arial-BoldItalicMT.ttf') format('truetype'),
+    url('../../assets/fonts/Arial1/Arial-BoldItalicMT.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
-  font-family: "Arial";
-  src: url("../../assets/fonts/Arial1/ArialMT.eot");
-  src: url("../../assets/fonts/Arial1/ArialMT.eot") format("eot"), url("../../assets/fonts/Arial1/ArialMT.ttf") format("truetype"), url("../../assets/fonts/Arial1/ArialMT.woff") format("woff");
+  font-family: 'Arial';
+  src: url('../../assets/fonts/Arial1/ArialMT.eot');
+  src: url('../../assets/fonts/Arial1/ArialMT.eot') format('eot'),
+    url('../../assets/fonts/Arial1/ArialMT.ttf') format('truetype'),
+    url('../../assets/fonts/Arial1/ArialMT.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Arial";
-  src: url("../../assets/fonts/Arial1/Arial-BoldMT.eot");
-  src: url("../../assets/fonts/Arial1/Arial-BoldMT.eot") format("eot"), url("../../assets/fonts/Arial1/Arial-BoldItalicMT.ttf") format("truetype"), url("../../assets/fonts/Arial1/Arial-BoldItalicMT.woff") format("woff");
+  font-family: 'Arial';
+  src: url('../../assets/fonts/Arial1/Arial-BoldMT.eot');
+  src: url('../../assets/fonts/Arial1/Arial-BoldMT.eot') format('eot'),
+    url('../../assets/fonts/Arial1/Arial-BoldItalicMT.ttf') format('truetype'),
+    url('../../assets/fonts/Arial1/Arial-BoldItalicMT.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Arial";
-  src: url("../../assets/fonts/Arial1/Arial-ItalicMT.eot");
-  src: url("../../assets/fonts/Arial1/Arial-ItalicMT.ttf") format("eot"), url("../../assets/fonts/Arial1/Arial-ItalicMT.ttf") format("truetype"), url("../../assets/fonts/Arial1/Arial-ItalicMT.woff") format("woff");
+  font-family: 'Arial';
+  src: url('../../assets/fonts/Arial1/Arial-ItalicMT.eot');
+  src: url('../../assets/fonts/Arial1/Arial-ItalicMT.ttf') format('eot'),
+    url('../../assets/fonts/Arial1/Arial-ItalicMT.ttf') format('truetype'),
+    url('../../assets/fonts/Arial1/Arial-ItalicMT.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
@@ -175,12 +190,15 @@ main > div .pet-container {
   }
 }
 @media screen and (max-width: 1279px) {
-  main > div .pet-container > div:nth-last-child(1), main > div .pet-container > div:nth-last-child(2) {
+  main > div .pet-container > div:nth-last-child(1),
+  main > div .pet-container > div:nth-last-child(2) {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  main > div .pet-container > div:nth-last-child(3), main > div .pet-container > div:nth-last-child(4), main > div .pet-container > div:nth-last-child(5) {
+  main > div .pet-container > div:nth-last-child(3),
+  main > div .pet-container > div:nth-last-child(4),
+  main > div .pet-container > div:nth-last-child(5) {
     display: none;
   }
 }
@@ -230,7 +248,8 @@ main > div .pagination .active:hover {
 }
 
 footer > div {
-  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(at left, #513d2f, #1a1a1c);
+  background: url('../../assets/images/noise_transparent@2x.png'),
+    radial-gradient(at left, #513d2f, #1a1a1c);
   padding: 40px 40px 0;
   display: flex;
   justify-content: space-between;
@@ -261,13 +280,13 @@ footer > div .locations {
 }
 @media screen and (max-width: 1279px) {
   footer > div .contacts,
-footer > div .locations {
+  footer > div .locations {
     margin: 0 30px 65px;
   }
 }
 @media screen and (max-width: 767px) {
   footer > div .contacts,
-footer > div .locations {
+  footer > div .locations {
     margin: 0;
     margin-bottom: 40px;
     height: fit-content;
@@ -286,13 +305,13 @@ footer > div .locations h3 {
 }
 @media screen and (max-width: 767px) {
   footer > div .contacts h3 br,
-footer > div .locations h3 br {
+  footer > div .locations h3 br {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
   footer > div .contacts h3,
-footer > div .locations h3 {
+  footer > div .locations h3 {
     font-family: Georgia, Verdana, serif;
     font-size: 35px;
     line-height: 130%;
@@ -311,13 +330,13 @@ footer > div .locations div a {
 }
 @media screen and (max-width: 1279px) {
   footer > div .contacts div a,
-footer > div .locations div a {
+  footer > div .locations div a {
     padding-top: 33px;
   }
 }
 @media screen and (max-width: 767px) {
   footer > div .contacts div a,
-footer > div .locations div a {
+  footer > div .locations div a {
     justify-content: center;
     padding-top: 40px;
   }
@@ -347,9 +366,9 @@ footer > div .locations .london a img {
 }
 @media screen and (max-width: 767px) {
   footer > div .contacts .boston,
-footer > div .contacts .london,
-footer > div .locations .boston,
-footer > div .locations .london {
+  footer > div .contacts .london,
+  footer > div .locations .boston,
+  footer > div .locations .london {
     text-align: start;
     align-self: flex-start;
   }
@@ -416,7 +435,19 @@ header .menu-icon {
     height: 22px;
     width: 30px;
     margin-right: 43px;
-    background: linear-gradient(to bottom, #f1cdb3 0%, #f1cdb3 9%, transparent 9%, transparent 45.5%, #f1cdb3 45.5%, #f1cdb3 54.5%, transparent 54.5%, transparent 91%, #f1cdb3 91%, #f1cdb3 100%);
+    background: linear-gradient(
+      to bottom,
+      #f1cdb3 0%,
+      #f1cdb3 9%,
+      transparent 9%,
+      transparent 45.5%,
+      #f1cdb3 45.5%,
+      #f1cdb3 54.5%,
+      transparent 54.5%,
+      transparent 91%,
+      #f1cdb3 91%,
+      #f1cdb3 100%
+    );
   }
 }
 header .nav-menu {
@@ -452,7 +483,7 @@ header .nav-menu ul li .current-link {
   position: relative;
 }
 header .nav-menu ul li .current-link:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -498,7 +529,19 @@ header {
 }
 @media screen and (max-width: 767px) {
   header .menu-icon {
-    background: linear-gradient(to bottom, #000 0%, #000 9%, transparent 9%, transparent 45.5%, #000 45.5%, #000 54.5%, transparent 54.5%, transparent 91%, #000 91%, #000 100%);
+    background: linear-gradient(
+      to bottom,
+      #000 0%,
+      #000 9%,
+      transparent 9%,
+      transparent 45.5%,
+      #000 45.5%,
+      #000 54.5%,
+      transparent 54.5%,
+      transparent 91%,
+      #000 91%,
+      #000 100%
+    );
   }
 }
 header .logo .title,
