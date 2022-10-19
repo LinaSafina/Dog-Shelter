@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+body.active-menu {
+  overflow-y: hidden;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+  z-index: 9;
+}
+
+body.active-menu .overlay {
+  display: block;
+}
+
 .wrapper {
   position: relative;
   width: 1280px;

@@ -4,8 +4,8 @@
 @import '../components/pet-card.scss';
 @import '../components/pets-page.scss';
 @import '../layout/footer';
-@import '../layout/header';
 @import '../layout/wrapper';
+@import '../layout/header';
 
 body {
   background-color: $color-light-l;
@@ -16,8 +16,13 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   position: sticky;
+
   @media screen and (max-width: 767px) {
     padding: 30px 10px;
+
+    &.active-menu {
+      position: static;
+    }
   }
   .menu-icon {
     @media screen and (max-width: 767px) {
@@ -34,6 +39,22 @@ header {
         #000 91%,
         #000 100%
       );
+
+      &.active-menu {
+        background: linear-gradient(
+          to bottom,
+          $color-primary 0%,
+          $color-primary 9%,
+          transparent 9%,
+          transparent 45.5%,
+          $color-primary 45.5%,
+          $color-primary 54.5%,
+          transparent 54.5%,
+          transparent 91%,
+          $color-primary 91%,
+          $color-primary 100%
+        );
+      }
     }
   }
   .logo {
@@ -53,6 +74,22 @@ header {
         }
         .current-link {
           color: $color-dark-l;
+        }
+      }
+    }
+
+    &.active-menu {
+      ul {
+        li {
+          a {
+            color: $color-dark-s;
+            &:hover {
+              color: $color-light-s;
+            }
+          }
+          .current-link {
+            color: $color-light-s;
+          }
         }
       }
     }
