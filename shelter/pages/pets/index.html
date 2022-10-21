@@ -9,7 +9,36 @@
     <link rel="stylesheet" href="pets.css" />
   </head>
   <body>
-    <div class="overlay"></div>
+    <div class="overlay">
+      <div class="popup">
+        <div class="popup__closeBtn">
+          <button class="closeBtn" type="button"></button>
+        </div>
+        <div class="popup__inner">
+          <img class="popup__img" />
+          <!-- </div> -->
+          <div class="popup__content content">
+            <h3 class="content__title"></h3>
+            <h4 class="content__subtitle"></h4>
+            <p class="content__descr"></p>
+            <ul class="content__list">
+              <li class="content__list-item" data-id="age">
+                <span>Age: </span>
+              </li>
+              <li class="content__list-item" data-id="inoculations">
+                <span>Inoculations: </span>
+              </li>
+              <li class="content__list-item" data-id="diseases">
+                <span>Diseases: </span>
+              </li>
+              <li class="content__list-item" data-id="parasites">
+                <span>Parasites: </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <header>
         <div class="logo">
@@ -48,42 +77,42 @@
             are looking for a house
           </h3>
           <div class="pet-container">
-            <div class="pet-card">
-              <img src="../../assets/images/pets-katrine.png" alt="Katrine" />
+            <div class="pet-card" id="5katrine">
+              <img src="../../assets/images/katrine.png" alt="Katrine" />
               <p>Katrine</p>
               <button>Learn more</button>
             </div>
-            <div class="pet-card">
-              <img src="../../assets/images/pets-jennifer.png" alt="Jennifer" />
+            <div class="pet-card" id="1jennifer">
+              <img src="../../assets/images/jennifer.png" alt="Jennifer" />
               <p>Jennifer</p>
               <button>Learn more</button>
             </div>
-            <div class="pet-card">
-              <img src="../../assets/images/pets-woody.png" alt="Woody" />
+            <div class="pet-card" id="3woody">
+              <img src="../../assets/images/woody.png" alt="Woody" />
               <p>Woody</p>
               <button>Learn more</button>
             </div>
-            <div class="pet-card">
-              <img src="../../assets/images/pets-sophia.png" alt="Sophia" />
+            <div class="pet-card" id="2sophia">
+              <img src="../../assets/images/sophia.png" alt="Sophia" />
               <p>Sophia</p>
               <button>Learn more</button>
             </div>
-            <div class="pet-card">
-              <img src="../../assets/images/pets-timmy.png" alt="Timmy" />
+            <div class="pet-card" id="6timmy">
+              <img src="../../assets/images/timmy.png" alt="Timmy" />
               <p>Timmy</p>
               <button>Learn more</button>
             </div>
-            <div class="pet-card">
+            <div class="pet-card" id="8charly">
               <img src="../../assets/images/Charly.png" alt="Charly" />
               <p>Charly</p>
               <button>Learn more</button>
             </div>
-            <div class="pet-card">
-              <img src="../../assets/images/Scarlett.png" alt="Scarlett" />
+            <div class="pet-card" id="4scarlett">
+              <img src="../../assets/images/scarlett.png" alt="Scarlett" />
               <p>Scarlett</p>
               <button>Learn more</button>
             </div>
-            <div class="pet-card">
+            <div class="pet-card" id="7freddie">
               <img src="../../assets/images/Freddie.png" alt="Freddie" />
               <p>Freddie</p>
               <button>Learn more</button>
@@ -156,6 +185,8 @@
       </footer>
     </div>
 
+    <script src="../../pets.js"></script>
+    <script src="../pets/script.js"></script>
     <script src="../../script.js"></script>
   </body>
 </html>

@@ -2,8 +2,18 @@
   box-sizing: border-box;
 }
 
-body.active-menu {
-  overflow-y: hidden;
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  &.active-menu {
+    overflow-y: hidden;
+  }
+  &.opened-popup {
+    overflow-y: hidden;
+  }
 }
 
 .overlay {
@@ -17,7 +27,9 @@ body.active-menu {
   z-index: 9;
 }
 
-body.active-menu .overlay {
+body.active-menu .overlay,
+body.opened-popup .overlay {
+  background-color: rgba(41, 41, 41, 0.6);
   display: block;
 }
 

@@ -1,0 +1,132 @@
+.closeBtn {
+  width: 52px;
+  height: 52px;
+  background: transparent;
+  border: 2px solid $color-primary;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-image: url('../../assets/icons/closeBtn.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background: #fddcc4;
+  }
+}
+
+.content {
+  .content__title {
+    @include h3();
+    margin-bottom: 10px;
+  }
+
+  .content__subtitle {
+    @include h4();
+    margin-bottom: 40px;
+  }
+
+  .content__descr {
+    @include h5();
+    margin-bottom: 40px;
+  }
+
+  .content__list-item {
+    @include h5();
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 11px;
+
+    span {
+      font-weight: bold;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #f1cdb3;
+      border-radius: 50%;
+      width: 4px;
+      height: 4px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.popup {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 900px;
+  min-height: 500px;
+  overflow-y: scroll;
+  justify-content: space-between;
+  background-color: $color-light-s;
+  border-radius: 9px;
+  display: none;
+  overflow: visible;
+
+  &.opened-popup {
+    display: block;
+    animation: 0.5s ease-out appear forwards;
+  }
+
+  &.animated {
+    animation: 0.5s ease-out disappear forwards;
+  }
+
+  .popup__closeBtn {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+  }
+
+  .popup__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup__img {
+    min-width: 500px;
+    height: 500px;
+    display: inline-block;
+  }
+
+  .popup__content {
+    margin: 50px 20px 88px 30px;
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes disappear {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
