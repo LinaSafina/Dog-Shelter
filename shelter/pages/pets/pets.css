@@ -306,6 +306,25 @@ main > div .pagination .active:hover {
   left: 0;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 1279px) {
+  .content .content__subtitle {
+    margin-bottom: 20px;
+  }
+  .content .content__descr {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .content .content__list-item {
+    padding-left: 10px;
+    margin-bottom: 6px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .content .content__title,
+.content .content__subtitle {
+    text-align: center;
+  }
+}
 
 .popup {
   position: absolute;
@@ -313,8 +332,9 @@ main > div .pagination .active:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 900px;
-  min-height: 500px;
+  max-width: 900px;
+  width: 90%;
+  height: 500px;
   overflow-y: scroll;
   justify-content: space-between;
   background-color: #fafafa;
@@ -337,14 +357,53 @@ main > div .pagination .active:hover {
 .popup .popup__inner {
   display: flex;
   justify-content: space-between;
+  overflow-y: scroll;
 }
 .popup .popup__img {
-  min-width: 500px;
+  width: 500px;
   height: 500px;
   display: inline-block;
 }
 .popup .popup__content {
-  margin: 50px 20px 88px 30px;
+  margin: 50px 20px 88px 0;
+  width: 350px;
+}
+@media screen and (max-width: 1279px) {
+  .popup {
+    max-width: 630px;
+    height: 350px;
+  }
+  .popup .popup__img {
+    width: 350px;
+    height: 350px;
+  }
+  .popup .popup__content {
+    margin: 10px 9px 37px 0;
+    width: 260px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .popup {
+    max-width: 400px;
+    width: 80%;
+    max-height: 340px;
+  }
+  .popup .popup__closeBtn {
+    top: -54px;
+    right: -25px;
+  }
+  .popup .popup__img {
+    display: none;
+  }
+  .popup .popup__inner {
+    justify-content: center;
+    overflow-y: scroll;
+  }
+  .popup .popup__content {
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 @keyframes appear {
