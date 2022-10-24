@@ -825,7 +825,7 @@
 .popup .popup__inner {
   display: flex;
   justify-content: space-between;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 .popup .popup__img {
   width: 500px;
@@ -835,6 +835,7 @@
 .popup .popup__content {
   margin: 50px 20px 88px 0;
   width: 350px;
+  overflow-y: auto;
 }
 @media screen and (max-width: 1279px) {
   .popup {

@@ -66,6 +66,19 @@ main {
         margin: 0 10px;
         @include h4();
         background-color: inherit;
+
+        &.disabled,
+        &.disabled:hover {
+          border-color: $color-dark-s;
+          color: $color-dark-s;
+          cursor: auto;
+          pointer-events: none;
+        }
+
+        &:hover {
+          @include light-button-hover();
+        }
+
         @media screen and (max-width: 767px) {
           margin: 0 5px;
         }
@@ -73,15 +86,15 @@ main {
       .page {
         background-color: $color-primary;
       }
-      .disabled {
-        border-color: $color-dark-s;
-        color: $color-dark-s;
-      }
-      .active {
-        &:hover {
-          @include light-button-hover();
-        }
-      }
+      // .disabled {
+      //   border-color: $color-dark-s;
+      //   color: $color-dark-s;
+      // }
+      // .active {
+      //   &:hover {
+      //     @include light-button-hover();
+      //   }
+      // }
     }
   }
 }

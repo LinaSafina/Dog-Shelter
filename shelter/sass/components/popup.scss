@@ -101,7 +101,6 @@
   max-width: 900px;
   width: 90%;
   height: 500px;
-  overflow-y: scroll;
   justify-content: space-between;
   background-color: $color-light-s;
   border-radius: 9px;
@@ -126,7 +125,7 @@
   .popup__inner {
     display: flex;
     justify-content: space-between;
-    overflow-y: scroll;
+    overflow: hidden;
   }
 
   .popup__img {
@@ -138,6 +137,7 @@
   .popup__content {
     margin: 50px 20px 88px 0;
     width: 350px;
+    overflow-y: auto;
   }
 
   @media screen and (max-width: 1279px) {

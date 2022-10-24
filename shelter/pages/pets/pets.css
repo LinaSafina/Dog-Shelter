@@ -211,6 +211,17 @@ main > div .pagination .button-pagination {
   letter-spacing: 0.06em;
   background-color: inherit;
 }
+main > div .pagination .button-pagination.disabled, main > div .pagination .button-pagination.disabled:hover {
+  border-color: #cdcdcd;
+  color: #cdcdcd;
+  cursor: auto;
+  pointer-events: none;
+}
+main > div .pagination .button-pagination:hover {
+  border-color: #fddcc4;
+  background-color: #fddcc4;
+  cursor: pointer;
+}
 @media screen and (max-width: 767px) {
   main > div .pagination .button-pagination {
     margin: 0 5px;
@@ -218,15 +229,6 @@ main > div .pagination .button-pagination {
 }
 main > div .pagination .page {
   background-color: #f1cdb3;
-}
-main > div .pagination .disabled {
-  border-color: #cdcdcd;
-  color: #cdcdcd;
-}
-main > div .pagination .active:hover {
-  border-color: #fddcc4;
-  background-color: #fddcc4;
-  cursor: pointer;
 }
 
 .closeBtn {
@@ -335,7 +337,6 @@ main > div .pagination .active:hover {
   max-width: 900px;
   width: 90%;
   height: 500px;
-  overflow-y: scroll;
   justify-content: space-between;
   background-color: #fafafa;
   border-radius: 9px;
@@ -357,7 +358,7 @@ main > div .pagination .active:hover {
 .popup .popup__inner {
   display: flex;
   justify-content: space-between;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 .popup .popup__img {
   width: 500px;
@@ -367,6 +368,7 @@ main > div .pagination .active:hover {
 .popup .popup__content {
   margin: 50px 20px 88px 0;
   width: 350px;
+  overflow-y: auto;
 }
 @media screen and (max-width: 1279px) {
   .popup {

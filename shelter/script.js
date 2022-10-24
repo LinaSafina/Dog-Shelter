@@ -8,33 +8,48 @@ const logo = document.querySelector('.logo');
 const overlay = body.querySelector('.overlay');
 const menuListItems = navMenu.querySelectorAll('li');
 
-burger.addEventListener('click', addAnimatedClass);
-burger.addEventListener('click', toggleClasses);
-overlay.addEventListener('click', removeActiveMenuClasses);
+burger.addEventListener('click', () => {
+  if (burger.classList.contains('active-menu')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+});
+// burger.addEventListener('click', toggleClasses);
+overlay.addEventListener('click', () => {
+  closeMenu();
+});
 
 Array.from(menuListItems).forEach((item) =>
-  item.addEventListener('click', toggleClasses)
+  item.addEventListener('click', () => {
+    if (burger.classList.contains('active-menu')) {
+      closeMenu();
+    }
+  })
 );
 
-function addAnimatedClass() {
+function openMenu() {
   burger.classList.add('animated');
   navMenu.classList.add('animated');
+
+  body.classList.add('active-menu');
+  header.classList.add('active-menu');
+  logo.classList.add('active-menu');
+  burger.classList.add('active-menu');
+  navMenu.classList.add('active-menu');
 }
 
-function toggleClasses() {
-  body.classList.toggle('active-menu');
-  header.classList.toggle('active-menu');
-  logo.classList.toggle('active-menu');
-  burger.classList.toggle('active-menu');
-  navMenu.classList.toggle('active-menu');
-}
-
-function removeActiveMenuClasses() {
+function closeMenu() {
   body.classList.remove('active-menu');
   header.classList.remove('active-menu');
   logo.classList.remove('active-menu');
   burger.classList.remove('active-menu');
   navMenu.classList.remove('active-menu');
+
+  setTimeout(() => {
+    burger.classList.remove('animated');
+    navMenu.classList.remove('animated');
+  }, 1000);
 }
 
 //popup
