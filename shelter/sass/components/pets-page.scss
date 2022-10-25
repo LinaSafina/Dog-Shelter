@@ -29,6 +29,13 @@ main {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
       gap: 30px 40px;
+      opacity: 1;
+      transition: opacity 1s;
+
+      &.animated {
+        opacity: 0;
+      }
+
       @media screen and (max-width: 1279px) {
         justify-items: center;
         grid-template-columns: 1fr 1fr;
@@ -86,15 +93,24 @@ main {
       .page {
         background-color: $color-primary;
       }
-      // .disabled {
-      //   border-color: $color-dark-s;
-      //   color: $color-dark-s;
-      // }
-      // .active {
-      //   &:hover {
-      //     @include light-button-hover();
-      //   }
-      // }
     }
   }
 }
+
+// @keyframes fade {
+//   0% {
+//     opacity: 1;
+//   }
+
+//   50% {
+//     opacity: 0;
+//   }
+
+//   70% {
+//     opacity: 1;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }

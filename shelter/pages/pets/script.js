@@ -37,11 +37,11 @@ for (let j = 0; j <= 10; j++) {
   }
 
   arrayOfPets = [...arrayOfPets, ...filteredData];
-  console.log(arrayOfPets);
 }
 
 //add pets info to the page
 
+const petContainer = document.querySelector('.pet-container');
 const petCards = Array.from(document.querySelectorAll('.pet-card'));
 const paginationBtns = Array.from(
   document.querySelectorAll('.button-pagination')
@@ -77,19 +77,19 @@ window.addEventListener('resize', () => {
 
 firstPageBtn.addEventListener('click', () => {
   changeCurrentPage(1);
-  getPets();
+  slideFade();
   disableFirstBtns();
   activateLastBtns();
 });
 lastPageBtn.addEventListener('click', () => {
   changeCurrentPage(Math.ceil(numOfPets / numOfShownPets));
-  getPets();
+  slideFade();
   disableLastBtns();
   activateFirstBtns();
 });
 previousPageBtn.addEventListener('click', () => {
   changeCurrentPage(currentPage - 1);
-  getPets();
+  slideFade();
 
   if (currentPage === 1) {
     disableFirstBtns();
@@ -99,7 +99,7 @@ previousPageBtn.addEventListener('click', () => {
 });
 nextPageBtn.addEventListener('click', () => {
   changeCurrentPage(currentPage + 1);
-  getPets();
+  slideFade();
 
   if (isLastPage()) {
     disableLastBtns();
@@ -131,12 +131,11 @@ function getPets() {
 
   petCards.forEach((card, index) => {
     const pet = arrayOfPets[index + startIndex];
-    console.log(index + startIndex);
-    card.id = pet.id;
 
     const img = card.querySelector('img');
     const name = card.querySelector('p');
 
+    card.id = pet.id;
     img.src = `${imgSrc}/${pet.img}`;
     img.alt = pet.name;
     name.innerHTML = pet.name;
@@ -177,4 +176,12 @@ function isLastPage() {
 
 function isFirstPage() {
   return currentPage === 1;
+}
+
+function slideFade() {
+  petContainer.classList.add('animated');
+  setTimeout(() => {
+    getPets();
+    petContainer.classList.remove('animated');
+  }, 1000);
 }

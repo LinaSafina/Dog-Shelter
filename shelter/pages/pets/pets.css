@@ -156,6 +156,11 @@ main > div .pet-container {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px 40px;
+  opacity: 1;
+  transition: opacity 1s;
+}
+main > div .pet-container.animated {
+  opacity: 0;
 }
 @media screen and (max-width: 1279px) {
   main > div .pet-container {
