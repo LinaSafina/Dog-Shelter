@@ -1,11 +1,27 @@
 main {
-  padding: 0 $padding;
+  margin: 0 auto;
+  padding: 0 $padding-1280;
+  @media screen and (max-width: 1279px) {
+    padding: 0 $padding-768;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0 $padding-320;
+  }
   & > div {
     margin: 80px 0 100px;
     text-align: center;
+    @media screen and (max-width: 1279px) {
+      margin-bottom: 75px;
+    }
+    @media screen and (max-width: 767px) {
+      margin: 42px 0;
+    }
     h3 {
       @include h3();
       color: $color-dark-l;
+      @media screen and (max-width: 767px) {
+        @include h3-mobile();
+      }
     }
     .pet-container {
       margin: 60px 0;
@@ -13,6 +29,39 @@ main {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
       gap: 30px 40px;
+      opacity: 1;
+      transition: opacity 1s;
+
+      &.animated {
+        opacity: 0;
+      }
+
+      @media screen and (max-width: 1279px) {
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 30px 64px 40px;
+      }
+      @media screen and (max-width: 767px) {
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 30px;
+        margin: 41px 15px;
+      }
+      & > div:nth-last-child(1),
+      & > div:nth-last-child(2) {
+        @media screen and (max-width: 1279px) {
+          display: none;
+        }
+      }
+      & > div:nth-last-child(3),
+      & > div:nth-last-child(4),
+      & > div:nth-last-child(5) {
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
     }
     .pagination {
       @include flex-row-center();
@@ -24,18 +73,25 @@ main {
         margin: 0 10px;
         @include h4();
         background-color: inherit;
-      }
-      .page {
-        background-color: $color-primary;
-      }
-      .disabled {
-        border-color: $color-dark-s;
-        color: $color-dark-s;
-      }
-      .active {
+
+        &.disabled,
+        &.disabled:hover {
+          border-color: $color-dark-s;
+          color: $color-dark-s;
+          cursor: auto;
+          pointer-events: none;
+        }
+
         &:hover {
           @include light-button-hover();
         }
+
+        @media screen and (max-width: 767px) {
+          margin: 0 5px;
+        }
+      }
+      .page {
+        background-color: $color-primary;
       }
     }
   }

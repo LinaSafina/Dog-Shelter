@@ -9,6 +9,36 @@
     <link rel="stylesheet" href="pets.css" />
   </head>
   <body>
+    <div class="overlay">
+      <div class="popup">
+        <div class="popup__closeBtn">
+          <button class="closeBtn" type="button"></button>
+        </div>
+        <div class="popup__inner">
+          <img class="popup__img" />
+          <!-- </div> -->
+          <div class="popup__content content">
+            <h3 class="content__title"></h3>
+            <h4 class="content__subtitle"></h4>
+            <p class="content__descr"></p>
+            <ul class="content__list">
+              <li class="content__list-item" data-id="age">
+                <span>Age: </span>
+              </li>
+              <li class="content__list-item" data-id="inoculations">
+                <span>Inoculations: </span>
+              </li>
+              <li class="content__list-item" data-id="diseases">
+                <span>Diseases: </span>
+              </li>
+              <li class="content__list-item" data-id="parasites">
+                <span>Parasites: </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <header>
         <div class="logo">
@@ -17,7 +47,17 @@
             <p class="subtitle">Shelter for pets in Boston</p>
           </a>
         </div>
+        <a href="#" class="menu-icon"></a>
         <nav class="nav-menu">
+          <div class="nav-top">
+            <div class="logo">
+              <a href="./index.html">
+                <h1 class="title">Cozy House</h1>
+                <p class="subtitle">Shelter for pets in Boston</p>
+              </a>
+            </div>
+            <!-- <a href="#" class="menu-icon"></a> -->
+          </div>
           <ul>
             <li>
               <a href="../../index.html">About the shelter</a>
@@ -38,43 +78,43 @@
           </h3>
           <div class="pet-container">
             <div class="pet-card">
-              <img src="../../assets/images/pets-katrine.png" alt="Katrine" />
-              <p>Katrine</p>
+              <img />
+              <p></p>
               <button>Learn more</button>
             </div>
             <div class="pet-card">
-              <img src="../../assets/images/pets-jennifer.png" alt="Jennifer" />
-              <p>Jennifer</p>
+              <img />
+              <p></p>
               <button>Learn more</button>
             </div>
             <div class="pet-card">
-              <img src="../../assets/images/pets-woody.png" alt="Woody" />
+              <img src="../../assets/images/woody.png" alt="Woody" />
               <p>Woody</p>
               <button>Learn more</button>
             </div>
-            <div class="pet-card">
-              <img src="../../assets/images/pets-sophia.png" alt="Sophia" />
-              <p>Sophia</p>
+            <div class="pet-card" i>
+              <img />
+              <p></p>
               <button>Learn more</button>
             </div>
             <div class="pet-card">
-              <img src="../../assets/images/pets-timmy.png" alt="Timmy" />
-              <p>Timmy</p>
+              <img />
+              <p></p>
               <button>Learn more</button>
             </div>
             <div class="pet-card">
-              <img src="../../assets/images/Charly.png" alt="Charly" />
-              <p>Charly</p>
+              <img />
+              <p></p>
               <button>Learn more</button>
             </div>
             <div class="pet-card">
-              <img src="../../assets/images/Scarlett.png" alt="Scarlett" />
-              <p>Scarlett</p>
+              <img />
+              <p></p>
               <button>Learn more</button>
             </div>
             <div class="pet-card">
-              <img src="../../assets/images/Freddie.png" alt="Freddie" />
-              <p>Freddie</p>
+              <img />
+              <p></p>
               <button>Learn more</button>
             </div>
           </div>
@@ -82,8 +122,8 @@
             <button class="button-pagination disabled">&lt;&lt;</button>
             <button class="button-pagination disabled">&lt;</button>
             <button class="button-pagination page">1</button>
-            <button class="button-pagination active">&gt;</button>
-            <button class="button-pagination active">&gt;&gt;</button>
+            <button class="button-pagination">&gt;</button>
+            <button class="button-pagination">&gt;&gt;</button>
           </div>
         </div>
       </main>
@@ -144,5 +184,9 @@
         </div>
       </footer>
     </div>
+
+    <script src="../../pets.js"></script>
+    <script src="script.js"></script>
+    <script src="../../script.js"></script>
   </body>
 </html>
