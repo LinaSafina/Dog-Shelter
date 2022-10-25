@@ -9,6 +9,37 @@
     <link rel="stylesheet" href="./pages/main/main.css" />
   </head>
   <body>
+    <div class="overlay">
+      <div class="popup">
+        <div class="popup__closeBtn">
+          <button class="closeBtn" type="button"></button>
+        </div>
+        <div class="popup__inner">
+          <img class="popup__img" />
+          <!-- </div> -->
+          <div class="popup__content content">
+            <h3 class="content__title"></h3>
+            <h4 class="content__subtitle"></h4>
+            <p class="content__descr"></p>
+            <ul class="content__list">
+              <li class="content__list-item" data-id="age">
+                <span>Age: </span>
+              </li>
+              <li class="content__list-item" data-id="inoculations">
+                <span>Inoculations: </span>
+              </li>
+              <li class="content__list-item" data-id="diseases">
+                <span>Diseases: </span>
+              </li>
+              <li class="content__list-item" data-id="parasites">
+                <span>Parasites: </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="wrapper">
       <header>
         <div class="logo">
@@ -17,7 +48,17 @@
             <p class="subtitle">Shelter for pets in Boston</p>
           </a>
         </div>
+        <a href="#" class="menu-icon"></a>
         <nav class="nav-menu">
+          <div class="nav-top">
+            <div class="logo">
+              <a href="./index.html">
+                <h1 class="title">Cozy House</h1>
+                <p class="subtitle">Shelter for pets in Boston</p>
+              </a>
+            </div>
+            <!-- <a href="#" class="menu-icon"></a> -->
+          </div>
           <ul>
             <li>
               <a href="./index.html" class="current-link">About the shelter</a>
@@ -32,7 +73,7 @@
         <div class="start-screen">
           <div>
             <div class="content">
-              <h2>Not only people need a house</h2>
+              <h2>Not only people <br />need a house</h2>
               <p>
                 We offer to give a chance to a little and nice puppy with an
                 extremely wide and open heart. He or she will love you more than
@@ -71,24 +112,62 @@
         <div class="pets" id="our-friends">
           <div>
             <h3>Our friends who <br />are looking for a house</h3>
-            <div>
-              <button class="button-arrow right">←</button>
-              <div class="pet-card">
-                <img src="./assets/images/pets-katrine.png" alt="Katrine" />
-                <p>Katrine</p>
-                <button>Learn more</button>
+            <button class="button-arrow left">←</button>
+            <button class="button-arrow right">→</button>
+            <div class="carousel-container">
+              <div class="pet-container previous">
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
               </div>
-              <div class="pet-card">
-                <img src="./assets/images/pets-jennifer.png" alt="Jennifer" />
-                <p>Jennifer</p>
-                <button>Learn more</button>
+
+              <div class="pet-container current">
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
               </div>
-              <div class="pet-card">
-                <img src="./assets/images/pets-woody.png" alt="Woody" />
-                <p>Woody</p>
-                <button>Learn more</button>
+
+              <div class="pet-container next">
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
+                <div class="pet-card">
+                  <img />
+                  <p></p>
+                  <button>Learn more</button>
+                </div>
               </div>
-              <button class="button-arrow left">→</button>
             </div>
             <a href="./pages/pets/index.html" type="button"
               >Get to know the rest</a
@@ -249,5 +328,9 @@
         </div>
       </footer>
     </div>
+
+    <script src="pets.js"></script>
+    <script src="./pages/main/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
