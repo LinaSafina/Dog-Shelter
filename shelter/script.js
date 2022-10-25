@@ -15,7 +15,7 @@ burger.addEventListener('click', () => {
     openMenu();
   }
 });
-// burger.addEventListener('click', toggleClasses);
+
 overlay.addEventListener('click', () => {
   closeMenu();
 });
@@ -54,7 +54,6 @@ function closeMenu() {
 
 //popup
 
-const petContainer = document.querySelector('.pet-container');
 const popup = document.querySelector('.popup');
 const popupImg = popup.querySelector('img');
 const popupTitle = popup.querySelector('.content__title');
@@ -66,8 +65,6 @@ const petInoculations = popup.querySelector('[data-id="inoculations"]');
 const petParasites = popup.querySelector('[data-id="parasites"]');
 const popupCloseBtn = popup.querySelector('.popup__closeBtn');
 
-// const learnMoreBtns = petContainer.querySelectorAll('button');
-
 petContainer.addEventListener('click', openPopup);
 overlay.addEventListener('click', (event) => {
   if (event.target === overlay || event.target === popupCloseBtn) {
@@ -78,6 +75,7 @@ popupCloseBtn.addEventListener('click', removePopupClasses);
 
 function openPopup(event) {
   const eventTarget = event.target;
+  console.log(event.target);
 
   if (eventTarget.nodeName === 'BUTTON') {
     popup.classList.remove('animated');

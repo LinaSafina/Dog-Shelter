@@ -104,7 +104,6 @@ header {
       z-index: 999;
       transform: translateX($menu-translateX);
 
-      // display: none;
       .nav-top {
         display: flex;
         align-items: center;
@@ -141,9 +140,6 @@ header {
         }
       }
     }
-    // @media screen and (max-width: 767px) {
-    //   display: none;
-    // }
   }
 }
 

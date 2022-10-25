@@ -1,9 +1,12 @@
 .pets {
   font-family: $font-georgia;
   background-color: $color-light-l;
+
   & > div {
     padding: 80px $padding-1280 100px;
     text-align: center;
+    position: relative;
+
     @media screen and (max-width: 1279px) {
       padding-left: $padding-768;
       padding-right: $padding-768;
@@ -21,35 +24,80 @@
         @include h3-mobile();
       }
     }
-    & > div {
-      margin: 60px 0;
-      display: flex;
+
+    .button-arrow {
+      @include button-arrow();
+      align-self: center;
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.left {
+        left: 40px;
+      }
+
+      &.right {
+        right: 40px;
+      }
+
+      &:hover {
+        @include light-button-hover();
+      }
       @media screen and (max-width: 1279px) {
-        justify-content: center;
+        &.left {
+          left: 30px;
+        }
+
+        &.right {
+          right: 30px;
+        }
       }
       @media screen and (max-width: 767px) {
-        flex-wrap: wrap;
+        margin: 20px 40px 0;
+        &.left {
+          left: 50px;
+          transform: translateY(0);
+          top: 570px;
+        }
+
+        &.right {
+          right: 50px;
+          transform: translateY(0);
+          top: 570px;
+        }
+      }
+    }
+
+    & > div {
+      margin: 60px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      max-width: 990px;
+
+      &.animated {
+        transition: all 1s;
+      }
+
+      @media screen and (max-width: 1279px) {
+        justify-content: center;
+        max-width: 580px;
+      }
+      @media screen and (max-width: 767px) {
         justify-content: center;
         margin: 0;
+        margin-bottom: 114px;
+        max-width: 270px;
       }
-      .button-arrow {
-        @include button-arrow();
-        align-self: center;
-        background-color: transparent;
-        &:hover {
-          @include light-button-hover();
-        }
-        @media screen and (max-width: 767px) {
-          margin: 20px 40px 0;
-        }
-      }
+
       .pet-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 90px;
-        margin: 0 53px;
+
         @media screen and (max-width: 1279px) {
-          margin: 0 12px;
           column-gap: 40px;
           grid-template-columns: 1fr 1fr;
         }
@@ -60,12 +108,12 @@
           order: -1;
           margin: 0;
         }
-        #woody {
+        & > div:nth-last-child(1) {
           @media screen and (max-width: 1279px) {
             display: none;
           }
         }
-        #jennifer {
+        & > div:nth-last-child(2) {
           @media screen and (max-width: 767px) {
             display: none;
           }

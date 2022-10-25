@@ -321,6 +321,7 @@
 .pets > div {
   padding: 80px 40px 100px;
   text-align: center;
+  position: relative;
 }
 @media screen and (max-width: 1279px) {
   .pets > div {
@@ -357,23 +358,7 @@
     font-size: 25px;
   }
 }
-.pets > div > div {
-  margin: 60px 0;
-  display: flex;
-}
-@media screen and (max-width: 1279px) {
-  .pets > div > div {
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  .pets > div > div {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-  }
-}
-.pets > div > div .button-arrow {
+.pets > div .button-arrow {
   border-radius: 100px;
   padding: 23px 19px;
   width: 52px;
@@ -385,26 +370,76 @@
   border: 2px solid #f1cdb3;
   align-self: center;
   background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.pets > div > div .button-arrow:hover {
+.pets > div .button-arrow.left {
+  left: 40px;
+}
+.pets > div .button-arrow.right {
+  right: 40px;
+}
+.pets > div .button-arrow:hover {
   border-color: #fddcc4;
   background-color: #fddcc4;
   cursor: pointer;
 }
+@media screen and (max-width: 1279px) {
+  .pets > div .button-arrow.left {
+    left: 30px;
+  }
+  .pets > div .button-arrow.right {
+    right: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
-  .pets > div > div .button-arrow {
+  .pets > div .button-arrow {
     margin: 20px 40px 0;
+  }
+  .pets > div .button-arrow.left {
+    left: 50px;
+    transform: translateY(0);
+    top: 570px;
+  }
+  .pets > div .button-arrow.right {
+    right: 50px;
+    transform: translateY(0);
+    top: 570px;
+  }
+}
+.pets > div > div {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 990px;
+}
+.pets > div > div.animated {
+  transition: all 1s;
+}
+@media screen and (max-width: 1279px) {
+  .pets > div > div {
+    justify-content: center;
+    max-width: 580px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pets > div > div {
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 114px;
+    max-width: 270px;
   }
 }
 .pets > div > div .pet-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 90px;
-  margin: 0 53px;
 }
 @media screen and (max-width: 1279px) {
   .pets > div > div .pet-container {
-    margin: 0 12px;
     column-gap: 40px;
     grid-template-columns: 1fr 1fr;
   }
@@ -419,12 +454,12 @@
   }
 }
 @media screen and (max-width: 1279px) {
-  .pets > div > div .pet-container #woody {
+  .pets > div > div .pet-container > div:nth-last-child(1) {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  .pets > div > div .pet-container #jennifer {
+  .pets > div > div .pet-container > div:nth-last-child(2) {
     display: none;
   }
 }
@@ -803,7 +838,6 @@
   max-width: 900px;
   width: 90%;
   height: 500px;
-  overflow-y: scroll;
   justify-content: space-between;
   background-color: #fafafa;
   border-radius: 9px;

@@ -1,4 +1,9 @@
-const imgSrc = '../../assets/images';
+let imgSrc = '../../assets/images';
+const paginationBtns = Array.from(
+  document.querySelectorAll('.button-pagination')
+);
+const petCards = Array.from(document.querySelectorAll('.pet-card'));
+const petContainer = document.querySelector('.pet-container');
 
 //get array of random pets for pagination
 
@@ -41,11 +46,6 @@ for (let j = 0; j <= 10; j++) {
 
 //add pets info to the page
 
-const petContainer = document.querySelector('.pet-container');
-const petCards = Array.from(document.querySelectorAll('.pet-card'));
-const paginationBtns = Array.from(
-  document.querySelectorAll('.button-pagination')
-);
 const firstPageBtn = paginationBtns[0];
 const previousPageBtn = paginationBtns[1];
 const currentPageBtn = paginationBtns[2];
