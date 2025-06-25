@@ -34,13 +34,13 @@
     &:hover > button: {
       @include light-button-hover();
     }
-  },
+  }
 
   @media (hover: none): {
     &:active > button: {
       @include light-button-hover();
-    },
-  },
+    }
+  }
 
   
 }
