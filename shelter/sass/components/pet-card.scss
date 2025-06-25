@@ -30,7 +30,17 @@
     white-space: nowrap;
     padding: 13px 43px;
   }
-  &:hover > button {
-    @include light-button-hover();
-  }
+  @media (hover: hover): {
+    &:hover > button: {
+      @include light-button-hover();
+    }
+  },
+
+  @media (hover: none): {
+    &:active > button: {
+      @include light-button-hover();
+    },
+  },
+
+  
 }
