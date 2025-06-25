@@ -308,11 +308,24 @@
   white-space: nowrap;
   padding: 13px 43px;
 }
-.pet-card:hover > button {
-  border-color: #fddcc4;
+@media (hover: hover): {
+    .pet-card:hover > button: {
+      border-color: #fddcc4;
   background-color: #fddcc4;
   cursor: pointer;
-}
+    },
+    
+  },
+
+
+  @media (hover: none): {
+    .pet-card:active > button: {
+      border-color: #fddcc4;
+  background-color: #fddcc4;
+  cursor: pointer;
+    },
+    
+  },
 
 .pets {
   font-family: Georgia, Verdana, serif;
