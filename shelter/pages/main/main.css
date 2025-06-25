@@ -313,9 +313,9 @@
       border-color: #fddcc4;
   background-color: #fddcc4;
   cursor: pointer;
-    },
+    }
     
-  },
+  }
 
 
   @media (hover: none): {
@@ -323,9 +323,9 @@
       border-color: #fddcc4;
   background-color: #fddcc4;
   cursor: pointer;
-    },
+    }
     
-  },
+  }
 
 .pets {
   font-family: Georgia, Verdana, serif;
